@@ -1,0 +1,24 @@
+/*
+*This section is to override the default style of iGEM
+*The source code comes from the attached middle school of Tsinghua University: https://2019.igem.org/Team:QHFZ-China
+*/
+
+#home_logo, #sideMenu { display:none; }
+#sideMenu, #top_title, .patrollink {display:none;}
+#content { margin-left:0px;margin-right:0px; margin-top:-7px; padding:0px; width:100%;background-color: rgba(0,0,0,0);}
+#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+#bodyContent a[href ^="https://"], .link-https { padding-right:0px;}
+.judges-will-not-evaluate { border: 4px solid #F42534; padding: 2% !important; width: 92%!important;}
+
+/*
+*这一部分是为了覆盖igem的默认样式
+*借鉴了清华附中2019年的覆盖方法：https://2019.igem.org/Team:QHFZ-China
+*/
+
+
+
+/*igem默认让ul带小方块，如果想要去掉，田间这一行代码*/
+ul {
+list-style-image: none !important;
+}
+
