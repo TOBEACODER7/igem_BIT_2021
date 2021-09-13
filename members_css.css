@@ -1,0 +1,175 @@
+
+    #menu
+    {
+        background-color: rgb(155, 229, 159);
+        width:100%;
+        height:100px;
+        padding:10px;
+        margin:0px;
+    }
+
+    a:link
+    {
+        background-color: rgb(155, 236, 209);
+        text-decoration: none;
+        font-size:20px;
+    }
+    a:visited 
+    {
+        text-decoration: none;
+        font-size:20px;
+    }
+    a:hover 
+    {
+        text-decoration: none;
+        background-color: rgb(250, 190, 245); /* useful */
+        font-size:25px;
+    }
+    
+    #M_left
+    {   
+        background-color: rgb(169, 240, 240);
+        width:20%;
+        height: 150%;
+        margin-left: 0px;
+        margin-right:1%;
+        padding:0.5%;
+        float: left;
+    }
+
+    #M_menu
+    {   
+        background-color:rgb(202, 154, 247);        
+        list-style-type:none;
+        display: block;
+        margin: 0px;
+        margin-top: 30%;
+        padding:0px;
+    }
+
+        .M_list
+        {
+            background-color: rgb(255, 209, 188);
+            margin-top:8%;
+            margin-left:10%;
+            height: 30spx;
+        }
+
+    
+
+    .M_right
+    {
+        background-color: rgb(255, 219, 215);/*粉色*/
+        width:78%;
+        height:auto;
+        float: left;
+
+
+    }
+
+        .M_group
+        {
+            background-color: rgb(247, 151, 243);/*浅紫色*/
+            width:100%;
+            height:auto;
+        }
+
+            .M_title
+            {
+                background-color: rgba(253, 241, 75, 0.63);/*黄色（透明）*/
+                width:98%;
+                font-size:25px;
+                padding-left: 2%;
+                height:auto;
+                
+            }
+
+            .M_sub
+            {
+                background-color: rgba(57, 211, 77, 0.8);/*绿色*/
+                width:100%;
+                height:100%;
+                margin:0px;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;/*换行*/
+				
+				/*justify-content: center;/*主轴中心对齐*/
+                /* display: inline; */
+                /* padding:5%; */
+            }
+
+                .M_people
+                {
+                    background-color: rgb(250, 184, 61);
+                    width:250px;
+                    height:350px;
+					margin-right:1.5%;
+					margin-left:1.5%;
+                    margin-bottom: 1.5%;
+					border-radius: 20px;/*圆角*/
+                    -webkit-perspective: 1000;
+                    perspective: 1000;
+					
+                }
+
+                .flip-content {
+                              width: 100%;
+                              height: 100%;
+							  border-radius: 20px;
+                              -webkit-transform-style: preserve-3d;
+                                      transform-style: preserve-3d;
+                              transition: all 0.8s linear;
+                            }
+
+                .M_people:hover .flip-content {
+					          border-radius: 20px;
+                              -webkit-transform: rotateY(180deg);
+                                      transform: rotateY(180deg);
+                            }
+                    .face {
+                      position: absolute;
+                      width: 100%;
+                      height: 100%;
+                      -webkit-backface-visibility: hidden;
+                              backface-visibility: hidden;
+                      overflow: hidden;
+                      border-radius: 20px;
+                     
+                    }
+                   
+
+                    .back.face {
+                      display: block;
+                      -webkit-transform: rotateY(180deg);
+                              transform: rotateY(180deg);
+                      box-sizing: border-box;
+					  border-radius: 20px;
+                      background-color:#E6E6FA; 
+                    }
+
+                        .M_pic
+                        {
+                            background-color: paleturquoise;
+                            height:60%;
+                            width:100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                            .M_pic img
+                            {
+                                height:90%;
+                                width:60%;
+                            }
+
+
+                        .M_imform
+                        {
+                            background-color: rgb(252, 210, 225);
+                            width:100%;
+                            height:100%;
+                        }
+                
+         
