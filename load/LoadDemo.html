@@ -1,0 +1,253 @@
+<html>
+
+<head>
+    <title> class-name test </title>
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../pic/LoadBackground.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /*进度条动画*/
+        .load-1 {
+            width: 400px;
+            height: 30px;
+            border-radius: 10px;
+            color: #79aa79;
+            border: 3px solid;
+            position: fixed;
+            top: 70%;
+            margin: 20px;
+        }
+
+        .load-1::before {
+            content: "";
+            position: absolute;
+            margin: 2px;
+            inset: 0 100% 0 0;
+            border-radius: inherit;
+            background: currentColor;
+            animation: l1 8s infinite;
+        }
+
+        @keyframes l1 {
+            100% {
+                inset: 0
+            }
+        }
+
+        /*img {
+            border-radius: 90px;
+        }*/
+
+        .load-logo {
+            position: fixed;
+            z-index: 1;
+        }
+
+        /*向上飞的大鸽子*/
+        .load-bird1 {
+            position: fixed;
+            z-index: 3;
+            opacity: 0;
+
+            animation-name: lb1;
+            animation-duration: 2s;
+            animation-iteration-count: unset;
+            /*animation-fill-mode: forwards;*/
+
+        }
+
+        @keyframes lb1 {
+            0% {
+                position: fixed;
+                opacity: 1;
+            }
+
+            10% {
+                position: relative;
+                top: -25px;
+                opacity: 0.9;
+            }
+
+            20% {
+                position: relative;
+                top: -50px;
+                opacity: 0.8;
+            }
+
+            30% {
+                position: relative;
+                top: -100px;
+                opacity: 0.7;
+            }
+
+            40% {
+                position: relative;
+                top: -150px;
+                opacity: 0.6;
+            }
+
+            50% {
+                position: relative;
+                top: -200px;
+                opacity: 0.5;
+            }
+
+            60% {
+                position: relative;
+                top: -250px;
+                opacity: 0.4;
+            }
+
+            70% {
+                position: relative;
+                top: -300px;
+                opacity: 0.3;
+            }
+
+            80% {
+                position: relative;
+                top: -350px;
+                opacity: 0.2;
+            }
+
+            90% {
+                position: relative;
+                top: -400px;
+                opacity: 0.1;
+            }
+
+            100% {
+                position: relative;
+                top: -450px;
+                opacity: 0;
+            }
+        }
+
+        /*侧面飞来的小鸽子*/
+        .load-bird2 {
+            position: fixed;
+            z-index: 2;
+            opacity: 0;
+
+            animation-name: lb2;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: fixed;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes lb2 {
+            0% {
+                position: fixed;
+                left: -600px;
+                opacity: 1;
+            }
+
+            10% {
+                position: relative;
+
+                left: -500px;
+                opacity: 1;
+            }
+
+            20% {
+                position: relative;
+
+                left: -425px;
+                opacity: 1;
+            }
+
+            30% {
+                position: relative;
+
+                left: -350px;
+                opacity: 1;
+            }
+
+            40% {
+                position: relative;
+
+                left: -300px;
+                opacity: 1;
+            }
+
+            50% {
+                position: relative;
+
+                left: -250px;
+                opacity: 1;
+            }
+
+            60% {
+                position: relative;
+
+                left: -200px;
+                opacity: 1;
+            }
+
+            70% {
+                position: relative;
+
+                left: -100px;
+                opacity: 1;
+            }
+
+            80% {
+                position: relative;
+
+                left: -75px;
+                opacity: 1;
+            }
+
+            90% {
+                position: relative;
+
+                left: -20px;
+                opacity: 1;
+            }
+
+            100% {
+                position: fixed;
+                opacity: 1;
+            }
+
+            /*from{
+                position: relative;
+                top: -250px;
+                left: -1000px;
+                opacity: 1;
+            }
+            to{
+                position: fixed;
+                
+                opacity: 1;
+            }*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="load-1"></div>
+
+    <div class="load-logo">
+        <img src="../pic/load1.png" width="500" height="500">
+    </div>
+
+    <div class="load-bird1">
+        <img src="../pic/loadbird1.png" width="600" height="600">
+    </div>
+
+    <div class="load-bird2">
+        <img src="../pic/loadbird2.png" width="500" height="500">
+    </div>
+
+</body>
+
+</html>
