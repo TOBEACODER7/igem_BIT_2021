@@ -3,14 +3,51 @@
 <head>
     <title> class-name test </title>
     <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+
+
+    <!--------<script>
+        //页面加载完成loading淡出
+        $(window).load(function () {
+            // Animate loader off screen
+            $("#load-1").fadeOut("slow");
+            $("#load-logo").fadeOut("slow");
+            $("#load-bird1").fadeOut("slow");
+            $("#load-bird2").fadeOut("slow");
+            $("#body").fadeOut("slow");
+    </script>-------->
+
+    <!-----
+        <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === 'complete') {
+                $('.load').fadeOut();
+                $('.load-1').fadeOut();
+                $('.load-logo').fadeOut();
+                $('.load-bird1').fadeOut();
+                $('.load-bird2').fadeOut();
+            }
+        }
+    </script>------>
+
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('../pic/LoadBackground.png');
+            /*background-image: url('../pic/LoadBackground.png');*/
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+
+        .load {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../pic/LoadBackground.png');
+    
         }
 
         /*进度条动画*/
@@ -41,9 +78,6 @@
             }
         }
 
-        /*img {
-            border-radius: 90px;
-        }*/
 
         .load-logo {
             position: fixed;
@@ -128,6 +162,7 @@
                 top: -425px;
                 opacity: 0;
             }
+
             /*60% {
                 position: relative;
                 top: -425px;
@@ -148,9 +183,9 @@
                 top: -425px;
                 opacity: 0;
             }*/
-            100%{
+            100% {
                 position: fixed;
-                
+
                 opacity: 0;
             }
         }
@@ -158,7 +193,7 @@
         /*侧面飞来的小鸽子*/
         .load-bird2 {
             position: fixed;
-            
+
             z-index: 2;
             opacity: 1;
 
@@ -170,11 +205,12 @@
         }
 
         @keyframes lb2 {
-            0%{
+            0% {
                 position: fixed;
                 left: -600px;
                 opacity: 0;
             }
+
             40% {
                 position: fixed;
                 left: -600px;
@@ -263,22 +299,29 @@
             }*/
         }
     </style>
+
 </head>
 
 <body>
-    <div class="load-1"></div>
 
-    <div class="load-logo">
-        <img src="../pic/load1.png" width="500" height="500">
+    <!---整体load样式----->
+    <div class="load">
+        
+        <div class="load-1"></div>
+
+        <div class="load-logo">
+            <img src="../pic/load1.png" width="500" height="500">
+        </div>
+
+        <div class="load-bird1">
+            <img src="../pic/loadbird1.png" width="600" height="600">
+        </div>
+
+        <div class="load-bird2">
+            <img src="../pic/loadbird2.png" width="550" height="550">
+        </div>
     </div>
 
-    <div class="load-bird1">
-        <img src="../pic/loadbird1.png" width="600" height="600">
-    </div>
-
-    <div class="load-bird2">
-        <img src="../pic/loadbird2.png" width="550" height="550">
-    </div>
 
 </body>
 
