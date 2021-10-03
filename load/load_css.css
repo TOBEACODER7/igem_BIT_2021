@@ -1,0 +1,278 @@
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}*/
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../pic/LoadBackground.png');
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;*/
+
+}
+
+/*进度条动画*/
+.load-1 {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    color: #79aa79;
+    border: 3px solid;
+    position: fixed;
+    top: 70%;
+    left: 40%;
+    margin: 20px;
+}
+
+.load-1::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l1 8s infinite;
+}
+
+@keyframes l1 {
+    100% {
+        inset: 0
+    }
+}
+
+
+.load-logo {
+    position: fixed;
+    left: 38%;
+    top: 30%;
+    z-index: 1;
+}
+
+/*向上飞的大鸽子*/
+.load-bird1 {
+    position: fixed;
+    left: 35%;
+    z-index: 3;
+    opacity: 0;
+
+    animation-name: lb1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes lb1 {
+    0% {
+        position: fixed;
+        opacity: 1;
+    }
+
+    5% {
+        position: fixed;
+        top: -25px;
+        opacity: 0.9;
+    }
+
+    10% {
+        position: fixed;
+        top: -50px;
+        opacity: 0.8;
+    }
+
+    15% {
+        position: fixed;
+        top: -100px;
+        opacity: 0.7;
+    }
+
+    20% {
+        position: fixed;
+        top: -150px;
+        opacity: 0.6;
+    }
+
+    250% {
+        position: fixed;
+        top: -200px;
+        opacity: 0.5;
+    }
+
+    30% {
+        position: fixed;
+        top: -250px;
+        opacity: 0.4;
+    }
+
+    35% {
+        position: fixed;
+        top: -300px;
+        opacity: 0.3;
+    }
+
+    40% {
+        position: fixed;
+        top: -350px;
+        opacity: 0.2;
+    }
+
+    45% {
+        position: fixed;
+        top: -400px;
+        opacity: 0.1;
+    }
+
+    50% {
+        position: fixed;
+        top: -425px;
+        opacity: 0;
+    }
+
+    /*60% {
+        position: relative;
+        top: -425px;
+        opacity: 0;
+    }
+    70% {
+        position: relative;
+        top: -425px;
+        opacity: 0;
+    }
+    80% {
+        position: relative;
+        top: -425px;
+        opacity: 0;
+    }
+    90% {
+        position: relative;
+        top: -425px;
+        opacity: 0;
+    }*/
+    100% {
+        position: fixed;
+
+        opacity: 0;
+    }
+}
+
+/*侧面飞来的小鸽子*/
+.load-bird2 {
+    position: fixed;
+    left: 35%;
+    top: 28%;
+    z-index: 2;
+    opacity: 1;
+
+    animation-name: lb2;
+    /*animation-delay: 2s;*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lb2 {
+    0% {
+        position: fixed;
+        left: -600px;
+        opacity: 0;
+    }
+
+    40% {
+        position: fixed;
+        left: -600px;
+        opacity: 1;
+    }
+
+    45% {
+        position: fixed;
+
+        left: -500px;
+        opacity: 1;
+    }
+
+    50% {
+        position: fixed;
+
+        left: -425px;
+        opacity: 1;
+    }
+
+    55% {
+        position: fixed;
+
+        left: -350px;
+        opacity: 1;
+    }
+
+    60% {
+        position: fixed;
+
+        left: -300px;
+        opacity: 1;
+    }
+
+    65% {
+        position: fixed;
+
+        left: -250px;
+        opacity: 1;
+    }
+
+    70% {
+        position: fixed;
+
+        left: -200px;
+        opacity: 1;
+    }
+
+    75% {
+        position: fixed;
+
+        left: -100px;
+        opacity: 1;
+    }
+
+    80% {
+        position: fixed;
+
+        left: -75px;
+        opacity: 1;
+    }
+
+    85% {
+        position: fixed;
+
+        left: -20px;
+        opacity: 1;
+    }
+
+    90% {
+        position: fixed;
+        opacity: 1;
+    }
+
+
+    /*from{
+        position: relative;
+        top: -250px;
+        left: -1000px;
+        opacity: 1;
+    }
+    to{
+        position: fixed;
+        
+        opacity: 1;
+    }*/
+}

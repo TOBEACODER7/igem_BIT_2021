@@ -3,33 +3,19 @@
 <head>
     <title> class-name test </title>
     <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <link href="./load_css.css" rel="stylesheet" type="text/css" />
 
+    <!----<script type="text/javascript">
+        // 等待所有加载
+        $(document).ready(function () {
+            $(window).load(function () {
+                $('.loading').delay(8000).fadeOut();
+            });
+        });
+    </script>---->
 
-    <!--------<script>
-        //页面加载完成loading淡出
-        $(window).load(function () {
-            // Animate loader off screen
-            $("#load-1").fadeOut("slow");
-            $("#load-logo").fadeOut("slow");
-            $("#load-bird1").fadeOut("slow");
-            $("#load-bird2").fadeOut("slow");
-            $("#body").fadeOut("slow");
-    </script>-------->
-
-    <!-----
-        <script>
-        document.onreadystatechange = function () {
-            if (document.readyState === 'complete') {
-                $('.load').fadeOut();
-                $('.load-1').fadeOut();
-                $('.load-logo').fadeOut();
-                $('.load-bird1').fadeOut();
-                $('.load-bird2').fadeOut();
-            }
-        }
-    </script>------>
-
-    <style>
+    
+    <!------<style>
         body {
             display: flex;
             justify-content: center;
@@ -299,13 +285,13 @@
             }*/
         }
     </style>
-
+------>
 </head>
 
 <body>
 
     <!---整体load样式----->
-    <div class="load">
+    <div class="loading">
         
         <div class="load-1"></div>
 
