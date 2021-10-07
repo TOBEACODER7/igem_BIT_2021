@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<head>
+<style>
+    body {
+                background-color: #F1B376;
+        		font: normal 11px verdana;
+		    }
+            #first-page{
+                position: fixed;
+                right: -400px;
+                height: 612px;
+                width: 517px;
+                background-image: url("./igem图片/一级菜单背景.png");
+                
+                /*
+                animation: myfirst 5s;
+                -webkit-animation: myfirst 5s;
+                */
+            }
+            @keyframes myfirst
+            {
+                0% {right: -400px;}
+                /*
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                */
+                100%{right:-135px;}
+            }
+            @-webkit-keyframes myfirst
+            {
+                0% {right: -135px;}
+                /*
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                */
+                100%{right:-400px;}
+            }
+            /*
+            @keyframes mythird
+            {
+                0% {right: -135px;}
+                
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                
+                100%{right:-400px;}
+            }
+            @-webkit-keyframes mythird
+            {
+                0% {right: -400px;}
+            
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                
+                100%{right:-135px;}
+            }
+            */
+            .nav{
+                background-color: rgba(0,0,0,0);
+                position: absolute;
+                left: 90px;
+                top: 100px;
+                width: 220px;
+                text-align: center;
+                
+            }
+            .nav li{
+                background-color: rgba(0,0,0,0);
+            }
+            .nav li a{
+                background-color: rgba(0,0,0,0);
+            }
+		    ul {
+                background-color: rgba(0,0,0,0);
+		        margin: 0;
+		        padding: 0;
+		        list-style: none;
+                
+		        width: 150px; /* Width of Menu Items */
+		       
+		    }
+		    ul li {
+                background-color: rgba(0,0,0,0);
+		        position: relative;
+		    }  
+            /*
+		    li ul {
+                background-color: rgba(0,0,0,0);
+                
+		        position: absolute;
+		        left: 149px; 
+		        display: none;
+		    }
+            */
+		    /* Styles for Menu Items */
+            
+		    ul li a {
+                background-color: rgba(0,0,0,0);
+		        display: block;
+		        text-decoration: none;
+		        color: #777;
+		        background: #fff; /* IE6 Bug */
+		        padding: 5px;
+		    }
+            .second-page ul{
+                position: absolute;
+                text-align: center;
+                width: 350px;
+                left:30px;
+                top:80px;
+
+            }
+            .second-page{
+                width: 410px;
+                height: 360px;
+                background-image: url("./igem图片/二级菜单背景.png");
+                position: absolute;
+                right:300px;
+                animation: mysecond 1s;
+                -webkit-animation: mysecond 1s;
+
+            }
+            @keyframes mysecond
+            {
+                0% {opacity: 0;}
+                40%{opacity: 0;}
+                /*
+                50%{background-color: rgba(0,0,0,0.5);}
+                75%{background-color: rgba(0,0,0,0.75);}
+                */
+                100%{opacity: 1;}
+            }
+            @-webkit-keyframes mysecond
+            {
+                0% {opacity: 0;}
+                40%{opacity: 0;}
+                /*
+                50%{background-color: rgba(0,0,0,0.5);}
+                75%{background-color: rgba(0,0,0,0.75);}
+                */
+                100%{opacity: 1;}
+            }
+            #second-page-1{
+                top:0px;
+                display: none;
+            }
+            #second-page-2{
+                display: none;
+            }
+            #second-page-3{
+                display: none;
+            }
+		    #tips{
+                position: absolute;
+                bottom: 200px;
+                width: 200px;
+                left: 120px;
+            }
+            #overlay{
+            position:absolute;
+            display: none;
+            top:0px;
+            left:0px;
+            bottom:0px;
+            right:0px;
+            background-color:rgba(0,0,0,0.7);
+            cursor: pointer;
+            /* -webkit-filter: blur(10px) grayscale(50%); */
+        }
+</style>
+<script>
+    function move(obj1)
+    {
+        obj1.style.animation="myfirst 1s";
+        //obj.style.-webkit-animation="myfirst 5s";
+        obj1.style.right="-135px";
+        var obj2 = document.getElementById("overlay");
+        obj2.style.display="unset";
+        
+    }
+    function away()
+    {
+        var obj1 = document.getElementById("first-page");
+        obj1.style.animation="mythird 1s";
+        obj1.style.right="-400px";
+        //obj1.style.transition="all 1s";
+        
+        for(var i=1;i<=3;i++)
+        {
+            var obj = document.getElementById("second-page-"+i);
+            obj.style.display="none";
+        }
+        
+        var obj2 = document.getElementById("overlay");
+        obj2.style.display="none";
+    }
+    function become(id)
+    {
+        var obj1 = document.getElementById("second-page-"+id);
+        obj1.style.display="unset";
+    }
+    function miss(id)
+    {
+        var obj1 = document.getElementById("second-page-"+id);
+        obj1.style.display="none";
+    }
+</script>
+</head>
+
+<body> 
+    <div id="overlay" onclick="away()"></div>
+    <div id = "first-page" onclick="move(this)">
+        <ul class="nav" >
+            <li><a href="#">home</a></li>
+            <li><a href="#" onclick="become(1)">option1</a></li>
+            <div class = "second-page" id = "second-page-1">
+                <ul>
+                <li><a href="#" onclick="miss(1)">Back To Previous Menu</a></li>
+                <li><a href="#">option1.1</a></li>
+                <li><a href="#">option1.2</a></li>
+                <li><a href="#">option1.3</a></li>
+                </ul>
+            </div>
+            <li><a href="#" onclick="become(2)">option2</a></li>
+            <div class = "second-page" id = "second-page-2">
+                <ul>
+                    <li><a href="#" onclick="miss(2)">Back To Previous Menu</a></li>
+                    <li><a href="#">option2.1</a></li>
+                    <li><a href="#">option2.2</a></li>
+                    <li><a href="#">option2.3</a></li>
+                </ul>
+            </div>
+            <li><a href="#" onclick="become(3)">option3</a></li>
+            <div class = "second-page" id = "second-page-3">
+                <ul>
+                    <li><a href="#" onclick="miss(3)">Back To Previous Menu</a></li>
+                    <li><a href="#">option3.1</a></li>
+                    <li><a href="#">option3.2</a></li>
+                    <li><a href="#">option3.3</a></li>
+                </ul>
+            </div>
+            
+        </ul>
+        <p id="tips">Click on the gray area to close the home directory</p>
+    </div>
+
+    <div class="text">
+        <img src="./igem图片/二级菜单背景.png">
+        <p>
+
+网站首页 编程入门教程 Java 大数据 Python 前端开发 数据库
+登录  |  注册
+手机版
+网站导航
+繁RSSTags
+ 输入您感兴趣的技术，开发遇到的问题...
+搜索
+源码下载
+
+广告合作
+
+VIP特权
+
+首页编程入门教程Java大数据Python前端开发数据库
+Java/Java开发框架 数据库相关教程 大数据相关教程 HTML/CSS相关教程 JavaScript/前端框架 开发工具相关教程 后端开发相关教程 Java开发技术 Java面试题库 Java架构设计 大数据资讯 大数据技术 大数据应用 Python开发技术 HTML HTML5 CSS JavaScript jQuery Vue AngularJS MySQL Oracle SQLServer MongoDB Redis
+
+首页 > 前端开发 > CSS > DIV+CSS教程 > 正文
+div+css实现带箭头的面包屑导航栏
+发布时间：2020-04-06 15:38:43  作者：本站编辑  来源：本站原创  浏览次数：我有话说   
+摘要：这篇DIV+CSS教程栏目下的“div+css实现带箭头的面包屑导航栏”，介绍的技术点是“div+css、面包屑导航栏、面包屑导航、div、面包屑、导航栏”，希望对大家开发技术学习和问题解决有帮助。
+
+制作漂亮美观的面包屑导航栏
+
+在开始之前，我要照例给大家科普一下啥叫面包屑导航栏
+
+类似于下面这几种的
+
+主页>栏目页>文章页面
+
+主页/栏目页/文章页面
+
+可以告诉访问者他们目前在网站中的位置以及如何返回的DOM叫面包屑导航栏
+
+但是。。。。。。
+
+你不觉得这个不好看吗？
+
+如果哪一天，你们公司的UI给你一张图，图里的面包屑导航栏是这样的
+
+
+
+这样的
+
+
+
+又或者是其他带图案的面包屑导航栏，这时候应该怎么做？
+
+可能有朋友说这个简单，so easy，直接找个图案给导航栏加background就行了
+
+可是，真的有这么简单吗？好，废话不多说，让我们直接开始动手实践一下，看到底该如何完成这种高颜值的面包削导航栏
+
+1、先用无序列表做一个导航栏，代码如下
+
+
+css代码也没什么特别的，就跟平常做nav差不多。接下来就开始将我们选中的背景图放上去，就是下面这张图
+
+
+
+给导航栏里面的li添加背景图片
+
+
+以上就是本文的全部内容，希望本文的内容对大家的学习或者工作能带来一定的帮助，同时也希望多多支持Java大数据社区！
+
+文章关键词： div+css 面包屑导航栏 面包屑导航 导航栏 面包屑 div
+
+0票
+
+
+
+开心
+
+0票
+
+
+
+板砖
+
+0票
+
+
+
+感动
+
+0票
+
+
+
+有用
+
+0票
+
+
+
+疑问
+
+0票
+
+
+
+难过
+
+0票
+
+
+
+无聊
+
+0票
+
+
+
+震惊
+
+上一篇：DIV+CSS实现电台列表设计的示例代码下一篇：不定宽高的文字在div中垂直居中实现方法
+评论已有 0 条
+发表你此时的观点和想法 ……
+验证码
+
+热门评论
+更多评论
+相关文章
+
+加载更多
+技术文章搜索
+Java SpringBoot SpringMvc Mybatis JDBC 大数据 Hadoop ElasticSearch Kafka Vue CSS JavaScript Html Html5 CSS3 MySQL Oracle 数据库
+文章推荐
+
+设计一个带选择和提示功能的检索框(分步介绍)
+评论 (0)
+
+CSS使用BFC规则布局引发外层div包裹内层div的...
+评论 (0)
+
+盒子边框border的三要素：宽/形状/颜色
+评论 (0)
+
+div仿checkbox表单样式美化及功能有素材
+评论 (0)
+
+div整体居中其内容不居中的示例代码
+评论 (0)
+
+独行DIV自适应宽度布局CSS实例与应用范围
+评论 (0)
+关于我们联系我们诚聘英才友情链接合作服务许可协议加入收藏设为首页
+ICP备案号：鄂ICP备13000039号-11 Powered by uxys.com Copyright © 2019-2099 www.uxys.com, All Rights Reserved
+
+Java大数据社区是一个专注于Java、大数据(大数据解决方案、大数据分析、大数据的应用)、GIS、前端开发、后端开发、数据库技术、Linux技术等开发技术学习资料和程序源码分享的网站。
+
+
+        </p>
+    </div>
+    
+    
+</body>
+</html>
