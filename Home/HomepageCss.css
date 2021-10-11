@@ -1,0 +1,180 @@
+ 
+    body
+    {
+        float: left; /* 必要 */
+        display: block;  
+        width:100%;       
+              
+        background-image:url("./img/back.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100% 100%; 
+        background-attachment:fixed;  
+        /* 控制背景是否跟随页面滚动 */
+        margin:0% 0%;
+    }
+	
+	
+	        .changzi
+			{
+				position:absolute;
+				width:100%;
+				height:100%;
+				z-index:-1;
+				
+			}
+			.changzi1
+			{
+				width:100%;
+				height:100%;
+			}
+			.animate__animated.animate__tada.animate__infinite{
+				position:absolute;
+				width:100%;
+				height:100%;
+				float: left;
+				width: 50%;
+				height: auto;
+				margin-top: 13%;
+			
+				
+			}
+			.animate__animated.animate__tada.animate__infinite img{
+				width: 54%;        
+				height: auto;
+				margin-left: 56%;
+				z-index:10;
+			}
+			.changzi img
+			{
+				
+				width:100%;
+				height:100%;
+			}
+			.changzi1 img
+			{
+				height:100%;
+				width:auto;
+			}
+    
+        #A_left
+        {
+			position:absolute;
+            top:10%;
+             /*background-color: darkseagreen; */
+            width: 92%;
+            height: 90%;
+            float: left; /* 必要 */
+            display: block;  
+        }
+		    
+            #A_sign
+            {
+				
+                /*background-color: rgb(139, 95, 160);*/
+                width:100%;
+                height:35%;                
+                padding-left: 5%;              
+            }
+
+            #A_sign img
+            {
+                height:100%; 
+            }
+
+            #A_word
+            {
+				
+                /*background-color: rgb(142, 241, 127);  */        
+                width: 100%;
+                height: 55%;
+                /* margin-top: 5px; */
+                text-align: center;
+                font-weight: bolder;
+                font-size: 250%;
+                font-family: Adobe Gothic Std B;
+                color: black;
+                text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469);
+                /* 左右 上下 */
+                line-height:25%;  
+            }
+            #A_word span
+            {
+                color:#CA1F78;
+
+            }
+			
+			#A_photo
+			{
+				position:absolute;
+				width:100%;
+				height:100%;
+			}
+			
+			#A_photo img
+			{
+				padding-top:5%;
+				height:90%;
+			    width:90%;
+			}
+			#A_sign1
+			{
+				height:8%;
+                width:auto; 
+				position:absolute;   
+                padding-left: 5%;
+				padding-top: 1%;
+				
+			}
+			#A_sign1 img
+			{
+				height:100%;
+                width:100%; 
+			}
+			    #C_qiu 
+				{
+					position:absolute;
+					/* background-color: aquamarine ;   */
+					float: left;
+					width: 50%;
+					height: auto;
+					margin-top: 13%;                
+				}
+
+				#C_qiu img
+				{
+					width: 54%;        
+					height: auto;
+					margin-left: 56%;   
+				}
+
+				#C_kuang
+				{
+					position:absolute;
+					overflow: hidden;
+					/* background-color: cornflowerblue; */
+					float: left;
+					width: 50%;
+					height: auto; 
+                    margin-left :50%;					
+					margin-top: 1.5%;   
+			 
+				}
+				#C_kuang img
+				{
+					/* overflow: hidden; */
+					width:126%;
+				}
+			
+
+        #A_right
+        {
+            position:absolute;
+			right:0%;
+            background-color: rgb(248, 223, 247);
+            width:8%;
+            height: auto;
+            display: block;  
+        }
+
+        

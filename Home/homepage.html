@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+ 
+<title>HOME</title>
+
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+	<link href="HomepageCss.css" type="text/css" rel="stylesheet"> 
+	<!--链接动画网站-->	
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" rel="stylesheet">  
+</head>
+
+<body>
+<div id="fullpage">
+<!--页面分为左右两块，右侧为导航栏
+fullpage的第一页为section0-->
+<!---->
+    <div class="section active" id="section0">
+        <div class="changzi">
+		<img src="./img/changzi.png">
+		</div>
+		<div id="A_left">
+            <div id="A_sign"><!--插入igem大图标-->
+                <img src="./img/sign.png">
+            </div>
+            <div id="A_word"><!--主界面两个颜色交替的文字-->
+                <p>Auxiliary  Screening </p>
+                <p>for</p>
+                <p><span>Early Colorectal</span> </p>
+                <p><span>Cancer</span></p> 
+                <p>through  <span>auto-slipped</span> </p>
+                <p><span>chip</span> </p>
+                <p>and  <span>smart  instrument</span></p> 
+            </div>
+
+        </div>
+        
+        <div id="A_right">
+            <p>导航栏</p>
+            <p>xxx</p>
+            <p>xxx</p>
+        </div>
+    </div>
+    <div class="section" id="section1">
+	        <div id="A_sign1"><!--插入igem小图标-->
+                <img src="./img/sign.png">
+            </div>
+		    <div class="changzi1"><!--肠子（转正）-->
+				<img src="./img/changzi1.png" usemap="#big">
+				<map name="big" id="big">
+                <area shape="circle" coords="815,374,250" href="#section2" alt="Venus"/>
+		    </div>
+    </div>
+    <div class="section" id="section2">
+        <div id="A_sign1">
+            <img src="./img/sign.png">
+        </div>
+		<div class="changzi"><!--放大的肠子-->
+		    <img src="./img/fangda.png">
+		</div>
+		<div class="animate__animated animate__tada animate__infinite"><!--细菌小人动画-->
+				<img src="./img/qiu.png">
+		</div>
+        <div id="C_kuang"><!--introduction框局部-->
+            <img src="./img/kuang.png">            
+        </div>
+    </div>
+	<div class="section" id="section3">
+            <div id="A_sign1">
+                <img src="./img/sign.png">
+            </div>
+			<div id="A_photo"><!--introduction框（转正）-->
+				<img src="./img/photo_introduction.png">
+			</div>
+        
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+	var a,b,c;
+	a=$(window).height();	
+	$(window).scroll(function(){		
+		var b=$(this).scrollTop();
+		$(".list").each(function(){
+			c=$(this).offset().top;							
+			if(a+b>c){
+				$(this).addClass("move");
+			}
+			else{
+				$(this).removeClass("move");
+			}
+		});	
+	});
+				
+});
+</script>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="homepage.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        // menu: '#menu',
+        lazyLoad: true
+    });
+</script>
+
+</body>
+</html>
