@@ -1,8 +1,9 @@
-
 IGEM
 
 Project structure
 IGEM
+
+```
 |-- 1_Home
 	|-- Home
 |-- 2_Project
@@ -36,6 +37,12 @@ IGEM
 	|-- Loading
     |-- GuideBar
     |-- Loading
+```
+
+
+
+
+
 Brief introduction
 This is the wiki code of IGEM team of Beijing Institute of technology in 2021.
 
