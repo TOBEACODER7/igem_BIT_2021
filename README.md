@@ -1,7 +1,7 @@
 # IGEM
 
-Project structure
-IGEM
+### Project structure
+
 
 ```
 |-- 1_Home
@@ -43,7 +43,8 @@ IGEM
 
 
 
-Brief introduction
+### Brief introduction
+
 This is the wiki code of IGEM team of Beijing Institute of technology in 2021.
 You can find these files in 2021-IGEM-Wiki-BIT
 
