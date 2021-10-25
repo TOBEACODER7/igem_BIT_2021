@@ -1,0 +1,1243 @@
+{{BIT/loading}}{{BIT/GuideBar}}
+
+<html>
+<link rel="stylesheet" type="text/css" href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/title_roof&action=raw&ctype=text/css" />
+
+<link rel="stylesheet" type="text/css" href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/word_page&action=raw&ctype=text/css" />
+
+<script type="text/javascript" src="https://2021.igem.org/wiki/index.php?title=Template:BIT/JS/word_page&action=raw&ctype=text/javascript"></script>
+<style>
+    /* 标题 */
+    
+    #top_logo {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+    }
+    
+    #words {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+    /* 正文 */
+    /* 集体图片 */
+    
+    .MS_box li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+    }
+    
+    .MS_box {
+        /* background-color: aquamarine; */
+        margin: 0;
+        padding: 0;
+        width: 800px;
+        overflow: hidden;
+        position: relative;
+        height: 533px;
+        margin-left: 15%;
+        justify-content: center;
+    }
+    
+    .MS_box img {
+        margin: 0;
+        padding: 0;
+        width: 800px;
+        height: 533px;
+    }
+    
+    .MS_box ul {
+        margin: 0;
+        padding: 0;
+        width: 2400px;
+        height: 533px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: myanimation 11s infinite;
+    }
+    
+    @keyframes myanimation {
+        0%,
+        25% {
+            left: 0;
+        }
+        35%,
+        60% {
+            left: -800px;
+        }
+        70%,
+        90% {
+            left: -1600px;
+        }
+    }
+    /* 个人图片 */
+    
+    .page_title {
+        /* background-color: aquamarine; */
+        width: 94%;
+        height: auto;
+        padding-top: 2%;
+        padding-left: 6%;
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 60px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .M_con {
+        margin-top: 85px;
+        /* background-color: rgb(168, 176, 248); */
+        margin-left: 12%;
+        width: 85%;
+        height: auto;
+        float: left;
+    }
+    
+    .M_group {
+        /* background-color: rgb(224, 154, 221); */
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .M_title {
+        background-color: #fff0f094;
+        width: 45%;
+        font-size: 40px;
+        margin-left: 3%;
+        margin-right: 53%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 25px;
+        font-family: Adobe Gothic Std B !important;
+        color: black !important;
+        font-size: 70px !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+        text-indent: 10% !important;
+    }
+    
+    .M_title p {
+        font-size: 30px !important;
+    }
+    
+    .M_sub {
+        /* background-color: rgba(57, 211, 77, 0.8); */
+        /* padding-top: 2%; */
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*换行*/
+        /*justify-content: center;/*主轴中心对齐*/
+        /* display: inline; */
+        /* padding:5%; */
+    }
+    
+    .M_people {
+        /* background-color: rgb(250, 184, 61); */
+        width: 225px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 0%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+        border-radius: 30px;
+        /*圆角*/
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        border: 4px solid #ffffff;
+    }
+    
+    .flip-content {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 30px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transition: all 0.8s linear;
+    }
+    
+    .M_people:hover .flip-content {
+        margin: 0px;
+        padding: 0px;
+        border-radius: 30px;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    
+    .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+    
+    .M_imform {
+        margin: 0px;
+        padding: 0px;
+        background-color: #cdfacdc7;
+        width: 100%;
+        height: 20%;
+        text-align: center !important;
+        font-family: Calibri !important;
+        font-size: 30px !important;
+        line-height: 60px !important;
+        color: rgb(255, 255, 255) !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .M_pic {
+        margin: 0px;
+        padding: 0px;
+        background-color: #f0c8c8d8;
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* align控制上下  justify控制左右; */
+    }
+    
+    .M_pic img {
+        height: 220px;
+        width: 180px;
+    }
+    
+    .back.face {
+        display: block;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        box-sizing: border-box;
+        border-radius: 30px;
+        background-color: #cdfacdc7;
+        float: left;
+    }
+    
+    .M_backpic {
+        /* background-color: #c577e4c7; */
+        height: 13%;
+        width: 20%;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0%;
+        padding-left: 10%;
+        display: flex;
+        float: left;
+        /* align-items: center; */
+    }
+    
+    .M_backname {
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        /* background-color: #0e580ec7; */
+        width: 70%;
+        height: 13%;
+        text-align: center;
+        font-size: 22px !important;
+        line-height: 40px !important;
+        color: rgb(255, 255, 255) !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .M_backword {
+        float: left;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 3%;
+        height: 90%;
+        background-color: #f3d0d0d8;
+        /* text-indent: 2em !important; */
+        text-align: justify !important;
+        font-size: 20px !important;
+        line-height: 25px !important;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+    
+    .M_backpic img {
+        height: 100%;
+    }
+    
+    #bottom_logo {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: 15%;
+        right: 50px;
+        left: 85%;
+        z-index: auto;
+    }
+</style>
+
+<body>
+    <div class="background" style="height: 100%; top: -30px">
+        <div class="bgcolor" style="height: 100%;">
+            <img id="top_logo" src="https://2021.igem.org/wiki/images/b/b4/T--BIT--top_logo.png">
+
+            <div id="title">
+                <div id=title1>
+                    <a href="#M_G1" onmouseover="titlefun(this,1)" onmouseout="titlefun2(1)">Team</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/a/ab/T--BIT--title1.png" id=title_bgimg1>
+                <img id="title_mark1" src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png">
+
+                <div id=title2>
+                    <a href="#M_G8" onmouseover="titlefun(this,2)" onmouseout="titlefun2(2)">PI</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg2">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark2">
+
+                <div id=title3>
+                    <a href="#M_G6" onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)">Biology Steering group</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg3">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark3">
+
+                <div id=title4>
+                    <a href="#M_G7" onmouseover="titlefun(this,4)" onmouseout="titlefun2(4)">Hardware Steering Group</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg4">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark4">
+
+                <div id=title5>
+                    <a href="#M_G2" onmouseover="titlefun(this,5)" onmouseout="titlefun2(5)">Biology</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg5">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark5">
+
+                <div id=title6>
+                    <a href="#M_G3" onmouseover="titlefun(this,6)" onmouseout="titlefun2(6)">Hardware</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg6">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark6">
+
+                <div id=title7>
+                    <a href="#M_G4" onmouseover="titlefun(this,7)" onmouseout="titlefun2(7)">Wiki</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg7">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark7">
+
+                <div id=title8>
+                    <a href="#M_G5" onmouseover="titlefun(this,8)" onmouseout="titlefun2(8)">Art</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg8">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark8">
+
+
+            </div>
+
+            <div id="words" style="height: 96%;">
+                <div class="page_title">Members</div>
+                <div class="M_group">
+                    <div class="M_title">
+                        <p id="M_G1">Team</p>
+                    </div>
+                    <div class="M_sub">
+                        <div class="MS_box">
+                            <ul>
+                                <li>
+                                    <img src="https://2021.igem.org/wiki/images/0/08/T--BIT--Members--all-1.jpeg">
+                                </li>
+                                <li>
+                                    <img src="https://2021.igem.org/wiki/images/a/a8/T--BIT--Members--all-2.jpeg">
+                                </li>
+                                <li>
+                                    <img src="https://2021.igem.org/wiki/images/c/c3/T--BIT--Members_test_team.jpeg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="M_group ">
+
+                    <div class="M_title ">
+                        <p id="M_G8">PI</p>
+                    </div>
+                    <div class="M_sub ">
+
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Deng Yulin</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6a/T--BIT--Members--dyl.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/6/66/T--BIT--Members-2dyl.png">
+                                    </div>
+                                    <p class="M_backname">Deng Yulin</p>
+                                    <p class="M_backword">
+                                        Professor<br> doctoral supervisor. <br>The research field belongs to the cross field of neurobiology, space biology and biological analysis technology.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Li Xiaoqiong</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/e/ef/T--BIT--Members--lxq.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/0/0e/T--BIT--Members-2lxq.png">
+                                    </div>
+                                    <p class="M_backname">Li Xiaoqiong</p>
+                                    <p class="M_backword">
+                                        Professor doctoral supervisor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Lv Xuefei </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/a/a6/T--BIT--Members--lxf.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/d/d0/T--BIT--Members-2lxf.png">
+                                    </div>
+                                    <p class="M_backname">Lv Xuefei </p>
+                                    <p class="M_backword">
+                                        Professor master supervisor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="M_group ">
+
+                    <div class="M_title ">
+                        <p id="M_G6">Biology steering group</p>
+                    </div>
+                    <div class="M_sub ">
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Li Anyi</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/d/d6/T--BIT--Members--lay.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/d/d6/T--BIT--Members--lay.jpeg">
+                                    </div>
+                                    <p class="M_backname">Li Anyi</p>
+                                    <p class="M_backword">
+                                        2017 Captain of BIT<br> majoring in biomedical engineering.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform">Peng Zhao</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/2/2b/T--BIT--Members--pz.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/2/2b/T--BIT--Members--pz.jpeg">
+                                    </div>
+                                    <p class="M_backname">Peng Zhao</p>
+                                    <p class="M_backword">
+                                        First-year graduate student<br> majoring in electronic information (Biomedical Engineering).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Wang Wenjia</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/c/c4/T--BIT--Members--wwj.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/c/c4/T--BIT--Members--wwj.jpeg">
+                                    </div>
+                                    <p class="M_backname"> Wang Wenjia</p>
+                                    <p class="M_backword">
+                                        Participated in iGEM for four years<br> Second-year graduate students <br> majoring in biomedical engineering.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform">Wu Minj</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/b/b4/T--BIT--Members--wmj.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/b/b4/T--BIT--Members--wmj.jpeg">
+                                    </div>
+                                    <p class="M_backname">Wu Minj</p>
+                                    <p class="M_backword">
+                                        2019 graduate student graduate student<br> majoring in biomedical engineering, research direction: biomedical detection
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform">He Fanglan</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/c/cc/T--BIT--Members--hfl.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/c/cc/T--BIT--Members--hfl.jpeg">
+                                    </div>
+                                    <p class="M_backname">He Fanglan</p>
+                                    <p class="M_backword">
+                                        participated in iGEM for three years<br> Second year graduate student <br> Majoring in biomedical engineering
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Jiang Hao</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/b/b1/T--BIT--Members--jh.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/b/b1/T--BIT--Members--jh.jpeg">
+                                    </div>
+                                    <p class="M_backname">Jiang Hao</p>
+                                    <p class="M_backword">
+                                        participated in iGEM for five years 2019 graduate student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="M_group ">
+
+                    <div class="M_title ">
+                        <p id="M_G7">Hardware steering group</p>
+                    </div>
+                    <div class="M_sub ">
+
+
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Fan Yunlong ：</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--Members--fyl.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--Members--fyl.jpeg">
+                                    </div>
+                                    <p class="M_backname">Fan Yunlong ：</p>
+                                    <p class="M_backword">
+                                        Ph. D. in space biomedical engineering, School of life, Beijing University of technology
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zhang Guodong</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/d/dc/T--BIT--Members--zgd.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/d/dc/T--BIT--Members--zgd.jpeg">
+                                    </div>
+                                    <p class="M_backname">Zhang Guodong</p>
+                                    <p class="M_backword">
+                                        2019 graduate student<br>Biomedical Engineering
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Ye Jing</p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/1/15/T--BIT--Members--yj.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/1/15/T--BIT--Members--yj.jpeg">
+                                    </div>
+                                    <p class="M_backname"> Ye Jing</p>
+                                    <p class="M_backword">
+                                        Third-year graduate students research direction : image processing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="M_group">
+                    <div class="M_title">
+                        <p id="M_G2">Biology</p>
+                    </div>
+
+                    <div class="M_sub">
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform">Ye Zifan </p>
+
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/0/0c/T--BIT--Members--biology-yzf.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/d/da/T--BIT--Members--2yzf.png">
+                                    </div>
+                                    <p class="M_backname">Ye Zifan</p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student<br> Biotechnology
+                                        <br> Vice leader of Team BIT, and leader of biology group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Yan Zihan
+
+                                    </p>
+
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/1/11/T--BIT--Members--biology-yzh.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/c/c7/T--BIT--Members--2yzh.png">
+                                    </div>
+                                    <p class="M_backname">Yan Zihan </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br>Experimental class in Biomedical engineering <br>Vice leader of Team BIT, member of biology group and HP group</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Liu Zhoumi </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/d/da/T--BIT--Members--biology-lzm.jpeg">
+                                    </div>
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6c/T--BIT--Members--2lzh.png">
+                                    </div>
+                                    <p class="M_backname"> Liu Zhoumi </p>
+                                    <p class="M_backword">
+                                        2018 undergraduate student<br> Biotechnology<br> Vice leader of Team BIT, and member of biology group
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Jia Haozhe </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/f/f0/T--BIT--Members--biology-jhz.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/0/02/T--BIT--Members--2jhz.png">
+                                    </div>
+                                    <p class="M_backname"> Jia Haozhe </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Experimental class in Biomedical engineering<br> Member of biology group and logistics group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Lei Zehao </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/f/fe/T--BIT--Members--biology-lzh.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6c/T--BIT--Members--2lzh.png">
+                                    </div>
+                                    <p class="M_backname"> Lei Zehao </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Biomedical engineering<br> Member of biology group and advertising group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Tang Zheng </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/b/bf/T--BIT--Members--biology-tz.jpeg">
+                                    </div>
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/7/7f/T--BIT--Members--2tz.png">
+                                    </div>
+                                    <p class="M_backname"> Tang Zheng </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Experimental class in Biomedical engineering <br> Member of biology group and advertising group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Wei Linyang </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6e/T--BIT--Members--biology-wly.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/5/5b/T--BIT--Members--2wly.png">
+                                    </div>
+                                    <p class="M_backname"> Wei Linyang </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Biomedical engineering <br> Leader of HP group, member of biology group and modelling group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Shi Huijing </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/4/4a/T--BIT--Members--biology-shj.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/e/e2/T--BIT--Members--2sjh.png">
+                                    </div>
+                                    <p class="M_backname"> Shi Huijing </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Biotechnology
+                                        <br> Leader of modelling group, and member of biology group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Er Tianyi </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/9/97/T--BIT--Members--biology-ety.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6e/T--BIT--Members--2ety.png">
+                                    </div>
+                                    <p class="M_backname"> Er Tianyi </p>
+                                    <p class="M_backword">
+
+                                        2019 undergraduate student <br> Biotechnology
+                                        <br> Leader of advertising group, and member of biology group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zhang Haotian </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/7/7b/T--BIT--Members--biology-zht.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/7/7c/T--BIT--Members--2zht.png">
+                                    </div>
+                                    <p class="M_backname"> Zhang Haotian </p>
+                                    <p class="M_backword">
+
+                                        2019 undergraduate student <br> Biotechnology
+                                        <br> Member of biology group and logistics group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Xi Zihan </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/2/26/T--BIT--Members--biology-xzh.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/9/92/T--BIT--Members--2xzh.png">
+                                    </div>
+                                    <p class="M_backname"> Xi Zihan </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Biomedical engineering<br> Member of biology group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="M_group">
+
+                    <div class="M_title">
+                        <p id="M_G3">Hardware</p>
+                    </div>
+                    <div class="M_sub">
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zhou Taiyan </p>
+
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/9/9a/T--BIT--Members--hardware-zty.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/b/b9/T--BIT--Members--2zty.png">
+                                    </div>
+                                    <p class="M_backname"> Zhou Taiyan </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Experimental class in Biomedical engineering <br> Leader of Team BIT, and leader of hardware group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Xie Qi </p>
+
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/0/08/T--BIT--Members--hardware-xq.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/a/ac/T--BIT--Members--2xq.png">
+                                    </div>
+                                    <p class="M_backname"> Xie Qi </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Biomedical engineering<br> Member of hardware group and HP group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zhu Chaoshuai </p>
+
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/5/50/T--BIT--Members--hardware-zcs.jpeg">
+                                    </div>
+
+                                </div>
+
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/3/35/T--BIT--Members--2zcs.png">
+                                    </div>
+                                    <p class="M_backname"> Zhu Chaoshuai </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Biomedical engineering<br> Leader of logistics group, and member of hardware group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Jin Can </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/2/23/T--BIT--Members--hardware-jc.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/1/18/T--BIT--Members--2jc.png">
+                                    </div>
+                                    <p class="M_backname">Jin Can </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Experimental class in biomedical engineering <br> Member of hardware group and logistics group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zhag Jianke </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/9/91/T--BIT--Members--hardware-zjk.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/1/11/T--BIT--Members--2zjk.png">
+                                    </div>
+                                    <p class="M_backname"> Zhag Jianke </p>
+                                    <p class="M_backword">
+
+                                        2020 undergraduate student <br> Information Science<br> Member of hardware group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Peng Xiao </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/6/6c/T--BIT--Members--hardware-px.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/9/9e/T--BIT--Members--2px.png">
+                                    </div>
+                                    <p class="M_backname"> Peng Xiao </p>
+                                    <p class="M_backword">
+
+                                        2020 undergraduate student <br> Experimental class in biomedical engineering <br> Member of hardware group, modelling group and logistics group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Wang Siyuan </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/0/04/T--BIT--Members--hardware-wsy.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/6/62/T--BIT--Members--2wsy.png">
+                                    </div>
+                                    <p class="M_backname"> Wang Siyuan </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Experimental class in Biomedical engineering <br> Member of hardware group and modelling group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Zuo Han </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/9/94/T--BIT--Members--hardware-zh.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/8/8b/T--BIT--Members--2zh.png">
+                                    </div>
+                                    <p class="M_backname"> Zuo Han </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> Biomedical engineering<br> Member of hardware group, modelling group and logistics group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="M_group">
+
+                    <div class="M_title">
+                        <p id="M_G4">Wiki</p>
+                    </div>
+                    <div class="M_sub">
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform">Yang WenJin </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/c/cb/T--BIT--Members--wiki-ywj.jpeg">
+                                    </div>
+                                </div>
+                                <div class=" back face ">
+                                    <div class="M_backpic ">
+                                        <img src="https://2021.igem.org/wiki/images/4/4e/T--BIT--Members--2ywj.png ">
+                                    </div>
+                                    <p class="M_backname ">Yang WenJin </p>
+                                    <p class="M_backword ">
+                                        2019 undergraduate student <br> Computer science and technology<br> Leader of of wiki group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people ">
+                            <div class="flip-content ">
+                                <div class="face ">
+                                    <p class="M_imform "> Wu Mengyu </p>
+                                    <div class="M_pic ">
+                                        <img src="https://2021.igem.org/wiki/images/1/1c/T--BIT--Members--wiki-wmy.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face ">
+                                    <div class="M_backpic ">
+                                        <img src="https://2021.igem.org/wiki/images/d/d6/T--BIT--Members--2wmy.png">
+                                    </div>
+                                    <p class="M_backname "> Wu Mengyu </p>
+                                    <p class="M_backword ">
+                                        2019 undergraduate student <br> Computer science and technology <br> Member of wiki group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people ">
+                            <div class="flip-content ">
+                                <div class="face ">
+                                    <p class="M_imform "> Chen Yiding </p>
+                                    <div class="M_pic ">
+                                        <img src="https://2021.igem.org/wiki/images/6/64/T--BIT--Members--wiki-cyd.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face ">
+                                    <div class="M_backpic ">
+                                        <img src="https://2021.igem.org/wiki/images/b/b4/T--BIT--Members--2cyd.png">
+                                    </div>
+                                    <p class="M_backname "> Chen Yiding </p>
+                                    <p class="M_backword ">
+                                        2019 undergraduate student <br> Computer science and technology<br> Member of wiki group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people ">
+                            <div class="flip-content ">
+                                <div class="face ">
+                                    <p class="M_imform "> Yang Jiayao </p>
+                                    <div class="M_pic ">
+                                        <img src="https://2021.igem.org/wiki/images/e/e0/T--BIT--Members--wiki-yjy.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face ">
+                                    <div class="M_backpic ">
+                                        <img src="https://2021.igem.org/wiki/images/d/d7/T--BIT--Members--2yjy.png">
+                                    </div>
+                                    <p class="M_backname "> Yang Jiayao </p>
+                                    <p class="M_backword ">
+                                        2019 undergraduate student <br> Computer science and technology<br> Member of wiki group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="M_group ">
+
+                    <div class="M_title ">
+                        <p id="M_G5 ">Art</p>
+                    </div>
+                    <div class="M_sub ">
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Xu Chen </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/4/49/T--BIT--Members--art-xc.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/a/a6/T--BIT--Members--2xc.png">
+                                    </div>
+                                    <p class="M_backname"> Xu Chen </p>
+                                    <p class="M_backword">
+                                        2019 undergraduate student <br> Industrial design<br> Leader of art group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="M_people">
+                            <div class="flip-content">
+                                <div class="face">
+                                    <p class="M_imform"> Fang Jingjing </p>
+                                    <div class="M_pic">
+                                        <img src="https://2021.igem.org/wiki/images/f/f8/T--BIT--Members--art-fjj.jpeg">
+                                    </div>
+                                </div>
+                                <div class="back face">
+                                    <div class="M_backpic">
+                                        <img src="https://2021.igem.org/wiki/images/0/01/T--BIT--Members--2fjj.png">
+                                    </div>
+                                    <p class="M_backname"> Fang Jingjing </p>
+                                    <p class="M_backword">
+                                        2020 undergraduate student <br> English-teaching class in international trade<br> Member of art group
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+</body>
+
+</html>
+
+{{BIT/Footer}}

@@ -1,0 +1,729 @@
+{{BIT/GuideBar}}
+
+
+<html>
+<link rel="stylesheet" type="text/css"
+    href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/title_roof&action=raw&ctype=text/css" />
+
+<link rel="stylesheet" type="text/css"
+    href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/word_page&action=raw&ctype=text/css" />
+
+<script type="text/javascript"
+    src="https://2021.igem.org/wiki/index.php?title=Template:BIT/JS/word_page&action=raw&ctype=text/javascript"></script>
+<style>
+    #top_logo {
+        z-index: 10 !important;
+    }
+
+    #title {
+        position: fixed;
+        width: 10%;
+        top: 120px;
+        left: 5%;
+    }
+
+    #title1 a {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg1 {
+        position: relative;
+        top: -50px;
+        left: -70px;
+        width: 211.5px;
+        height: 137.25px;
+
+    }
+
+    #title_mark1 {
+        position: fixed;
+        top: 110px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title2 a {
+        position: relative;
+        top: -50px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg2 {
+        position: relative;
+        top: -100px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark2 {
+        position: fixed;
+        top: 180px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title3 a {
+        position: relative;
+        top: -110px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg3 {
+        position: relative;
+        top: -185px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark3 {
+        position: fixed;
+        top: 240px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+
+    #title4 a {
+        position: relative;
+        top: -215px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg4 {
+        position: relative;
+        top: -265px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark4 {
+        position: fixed;
+        top: 250px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title5 a {
+        position: relative;
+        top: -270px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg5 {
+        position: relative;
+        top: -340px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark5 {
+        position: fixed;
+        top: 340px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+
+    #title6 a {
+        position: relative;
+        top: -370px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg6 {
+        position: relative;
+        top: -420px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark6 {
+        position: fixed;
+        top: 370px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title7 a {
+        position: relative;
+        top: -420px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg7 {
+        position: relative;
+        top: -495px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark7 {
+        position: fixed;
+        top: 440px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title8 a {
+        position: relative;
+        top: -525px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg8 {
+        position: relative;
+        top: -575px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark8 {
+        position: fixed;
+        top: 480px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title9 a {
+        position: relative;
+        top: -575px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg9 {
+        position: relative;
+        top: -650px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark9 {
+        position: fixed;
+        top: 540px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    /* <!-- 页面大标题 -->*/
+
+    #page_title {
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-family: Times New Roman;
+        line-height: 60px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    /*  一级标题（页内导航） */
+
+    #I,
+    #II,
+    #III {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: Times New Roman;
+        line-height: 40px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    /* 二级标题 */
+
+    #II1,
+    #II2,
+    #II3 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Times New Roman;
+        line-height: 30px !important;
+        text-align: center !important;
+        color: rgb(126, 187, 85) !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    #words {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+
+    #words p {
+        font-size: .9rem;
+        line-height: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: justify;
+    }
+	#E_vedio5
+	{
+	    margin-top:15px;
+	    margin-left:35%;
+		width:300px;
+	}
+	#E_vedio5 video
+	{
+	  
+		width:300px;
+	}
+	
+	#E_footlogo
+	{
+	    text-align:center;
+		margin-top:15px;
+		font-family: Times New Roman;
+		font-size: 18px;
+		line-height:25px;
+		clear:both;
+		
+	}
+</style>
+
+<body>
+    <div class="background" style="height: 100%; background-color: #98cb99;">
+        <div class="bgcolor" style="height: 100%;top: -30px">
+            <img id="top_logo" src="https://2021.igem.org/wiki/images/b/b4/T--BIT--top_logo.png">
+
+            <div id="title">
+                <div id=title1>
+                    <a href="#I" onmouseover="titlefun(this,1)" onmouseout="titlefun2(1)">I. Pathological study of
+                        colorectal cancer</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/a/ab/T--BIT--title1.png" id=title_bgimg1>
+                <img id="title_mark1" src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png">
+                <div id=title2>
+                    <a href="#II" onmouseover="titlefun(this,2)" onmouseout="titlefun2(2)">II. Functional cooperation on
+                        wechat applets
+                    </a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg2">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark2">
+                <div id=title3>
+                    <a href="#III" onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)">III. HP exchange and
+                        cooperation</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg3">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark3">
+
+
+
+            </div>
+
+            <div id="words">
+                <div class=" inner" style="padding: 40px;">
+                    <h2 id="page_title">Partnership</h2>
+                    <br>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp; As COVID-19 continues to ravage the world this year, most of our cooperation and
+                        communication with other teams are in the form of online meetings. What is particularly valuable
+                        is that during the winter vacation, some of the team members went back to their hometowns and
+                        had in-depth offline communication with iGEM team in their hometown colleges and universities,
+                        which also brought us valuable suggestions.
+                        <br>
+                        &nbsp; &nbsp; One of them is the cooperation and exchange with Wuhan University YiYe-China team.
+
+                    </p>
+
+                    <a href="https://2021.igem.org/Team:YiYe-China/Partnership" target="_blank"
+                        style="color:rgb(112, 173, 71); font-size:25px;">https://2021.igem.org/Team:YiYe-China/Partnership</a>
+
+                    <br>
+                    <h2 id="I">I. Pathological study of
+                        colorectal cancer</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp; YiYe-China's project is also a study on colorectal cancer, hoping to detect
+                        cancerous polyps through DNA methylation to minimize the discomfort of patients and some
+                        inconvenience of detection. This coincides with our thinking. Therefore, we discussed the
+                        current methods of colorectal cancer detection and treatment in depth, and compared and
+                        discussed the advantages and disadvantages of them.
+                        <br>
+                        &nbsp; &nbsp;Before this, YiYe-China intended to detect the possibility of diagnosis of
+                        colorectal cancer by detecting the amount of relevant DNA expression in the sample target.
+                        Through investigation, tissue factor pathway inhibitor 2 (TFPI2) was found to be an essential
+                        DNA for CRC detection. The tfPI-2 of CRC polyp patients was significantly higher than that of
+                        healthy people. Since cancerous polyps can be excreted from the surface of our intestines in
+                        faeces, they aimed to investigate the role and efficiency of tfPI-2 methylation. The methylated
+                        DNA can then be compared with a standard DNA sample to see if it is positive or negative by DNA
+                        bisulfite transformation and PCR amplification. In addition, they aim to make methylated DNA
+                        glow by combining a red fluorescent protein, mCherry, near the end of a toe-cutting switch, so
+                        the detector can easily identify potential cancer cells with the naked eye.
+                        <br>
+                        &nbsp; &nbsp; Comparatively speaking, we chose rRNA markers for early pre-diagnosis, and the
+                        discussion with YiYe-China brought us a lot of inspiration and suggestions on the selection of
+                        rRNA markers.
+                        <br>
+                    </p>
+
+                    <h2 id="II">II. Functional cooperation on
+                        wechat applets</h2>
+                    <br>
+
+                    <p>
+                        &nbsp; &nbsp; In view of the convenience and real-time detection characteristics of wechat mini
+                        program, the BIT team specially designed a wechat mini program with sliding SlipChip for
+                        fluorescence detection of patient samples. Through communication with YiYe-China, we also
+                        decided to establish a platform that YiYe-China can use on wechat mini program.
+                        <br>
+                        &nbsp; &nbsp; Let's take the operation interface of BIT team on wechat mini program as an
+                        example to briefly introduce its functions.
+                        <br>
+                        <br>
+                    </p>
+
+                    <h2 id="II1">1. Team
+                        introduction interface</h2>
+                    <br>
+                    <div class="container-col-1" style="text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 0 auto 0 auto;">
+                        <div class="container-col-1-left" style="width: 50%;">
+                            <p>
+                                &nbsp; &nbsp; This module is designed to display the main information of IGEM_BIT and
+                                Wuhan YiYe-China teams. The team logo and name of the two teams are displayed side by
+                                side at the top of the page. At the same time, a selection button will be set under the
+                                team logo. Users can click the button to browse more information about the corresponding
+                                team, including team introduction and team background, etc. The text and picture layout
+                                will be displayed in the form of a normal public account. The user can switch the lower
+                                content by switching the button below the team logo. (As shown in the figure)
+                            </p>
+                        </div>
+
+                        <div class="container-col-1-rig"
+                            style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                            <div class="Figure 1"
+                                style="display: flex;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                                <img src="https://2021.igem.org/wiki/images/d/d1/T--BIT--partnership1.1.png"
+                                    style="width: 40%;">
+                                <img src="https://2021.igem.org/wiki/images/1/16/T--BIT--partnership1.2.png"
+                                    style="width: 40%;">
+                            </div>
+
+                            <p style="text-align: center;font-size: 18px;
+                            font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 1.Team Introduction Page
+                            </p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div id="E_vedio5">
+					
+						<video    controls>
+							 <source src="https://2021.igem.org/wiki/images/2/25/T--BIT--partnership_program.mp4" type="video/mp4">
+
+						</video>
+					</div>
+					
+					<div id="E_footlogo">
+					        Video 1. Team Partnership video
+					</div>
+                    <h2 id="II2">2. Bluetooth
+                        control function</h2>
+                    <br>
+                    <br>
+                    <div class="container-col-2"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="Figure 2"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/3/3f/T--BIT--partnership2.1.png"
+                                style="width: 45%;">
+                            <img src="https://2021.igem.org/wiki/images/d/d8/T--BIT--partnership2.2.png"
+                                style="width: 45%;">
+                            <img src="https://2021.igem.org/wiki/images/f/f4/T--BIT--partnership2.3.png"
+                                style="width: 45%;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 2. Flow chart of work under
+                            Bluetooth control (module)
+                        </p>
+
+                    </div>
+
+                    <p>
+                        &nbsp; &nbsp; In this page (as shown in Figure 2), the user can mainly realize the following
+                        three functions, and the commands are sent by Bluetooth.
+                        <br>
+                        &nbsp; &nbsp; (1) Motor movement, multi-channel switching: there are four buttons on the page,
+                        corresponding to the front, back and left, each button has two modes, short press fine tuning,
+                        long press continuous movement. At the same time, there is also a button to finish the
+                        operation, to send the motor to end the movement, start to collect signals. The motor collects
+                        and processes the signal and automatically returns to the mobile phone.
+                        <br>
+                        &nbsp; &nbsp; (2) Sliding SlipChip sliding, micro telescopic rod movement: there is a button on
+                        the page, press the button small program will send a command, the SlipChip will start sliding.
+                        <br>
+                        &nbsp; &nbsp;(3) Temperature control: there is a button on the operation interface. Press the
+                        button and the small program will instruct the temperature control module to start working.
+                        <br>
+                        <br>
+                    </p>
+
+                    <h2 id="II3">3. Accept
+                        data and test results</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp; This page displays the collected data and detection results received through
+                        Bluetooth. When the sliding SlipChip has completed all the working steps, the collected results
+                        will be returned to the small program through Bluetooth, and the specific results will be
+                        displayed on this page.
+                        <br>
+                        <br>
+                    </p>
+
+                    <div class="container-col-3" style="text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 0 auto 0 auto;">
+
+                        <div class="container-col-3-left"
+                            style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                            <div class="Figure 3"
+                                style="display: flex;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                                <img src="https://2021.igem.org/wiki/images/3/3e/T--BIT--partnership3.1.png"
+                                    style="width: 30%;">
+                                <img src="https://2021.igem.org/wiki/images/6/68/T--BIT--partnership3.2.png"
+                                    style="width: 30%;">
+                            </div>
+
+                            <p style="text-align: center;font-size: 18px;
+                            font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 3. Interface diagram of data
+                                collection
+                            </p>
+                        </div>
+
+                        <div class="container-col-3-right"
+                            style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                            <div class="Figure 4 text">
+                                <p>
+                                    &nbsp; &nbsp;Figure 4 shows one of the code for the applet implementation
+                                    interface.。
+                                </p>
+                            </div>
+
+                            <div class="Figure 4"
+                                style="display: flex;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                                <img src="https://2021.igem.org/wiki/images/3/34/T--BIT--partnership4.png"
+                                    style="width: 80%;">
+                            </div>
+                            <p style="text-align: center;font-size: 18px;
+                            font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 4
+                            </p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <h2 id="III">III. HP exchange and cooperation
+                    </h2>
+                    <br>
+
+                    <div class="container-col-4" style="text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 0 auto 0 auto;">
+                        <div class="container-col-4-left" style="width: 30%;">
+                            <p>
+                                &nbsp; &nbsp; Before this, we also collected the adjustment questionnaire to timely
+                                understand the awareness of colorectal cancer in different populations. When we asked
+                                about the basic background of colorectal cancer, nearly half did not know or were
+                                completely unaware of the symptoms of colorectal cancer.
+                            </p>
+                        </div>
+
+                        <div class="container-col-4-rig"
+                            style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                            <div class="Figure 5"
+                                style="display: flex;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                                <img src="https://2021.igem.org/wiki/images/2/29/T--BIT--partnership5.png"
+                                    style="width: 70%;">
+                            </div>
+
+                            <p style="text-align: center;font-size: 18px;
+                            font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 5
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;Therefore, it is very important to popularize the information related to colorectal
+                        cancer.
+                    </p>
+                    <br>
+
+                    <div class="container-col-5" style="text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 0 auto 0 auto;">
+
+                        <div class="container-col-5-lef"
+                            style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                            <div class="Figure 6"
+                                style="display: flex;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                                <img src="https://2021.igem.org/wiki/images/b/b1/T--BIT--partnership6.png"
+                                    style="width: 70%;">
+                            </div>
+
+                            <p style="text-align: center;font-size: 18px;
+                            font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 6
+                            </p>
+                        </div>
+
+                        <div class="container-col-5-right" style="width: 60%;">
+                            <p>
+                                &nbsp; &nbsp; In the following what factors will increase the risk of colorectal cancer
+                                problem, think often intestinal disease and alcohol use increase the risk of the number
+                                is more, and think age and fewer diabetes increases the risk, and some subtle factors
+                                present uncertainty in investigation of many people is the attitude, Therefore, some
+                                obscure pathogenic factors are especially needed to be popularized to the public. These
+                                results indicate that many people do not know much about colorectal cancer and further
+                                illustrate the importance of the BIT and YiYe-China programs.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <p>
+                        &nbsp; &nbsp; Based on the above results, YiYe-China and we jointly carried out several online
+                        colorectal cancer publicity activities, which attracted the attention of the two universities
+                        and people from all walks of life. To improve people's understanding and prevention awareness of
+                        colorectal cancer through online publicity.
+                    </p>
+                    <br>
+                    <div class="container-col-6"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="Figure 7"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/f/f5/T--BIT--partnership7.png"
+                                style="width: 80%;padding: 0 10rem 0 10rem;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 7
+                        </p>
+
+                    </div>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp; The conference will introduce the clinical symptoms, dangers and mainstream
+                        detection methods of colorectal cancer, and summarize the problems existing in the existing
+                        detection technology and platform, such as high cost, long cycle, low tolerance of patients,
+                        which bring great inconvenience to the detection. Therefore, both teams hope to build sensitive
+                        and fast colorectal cancer detection systems.
+                        <br>
+                        &nbsp; &nbsp; We also use other online promotions. On the Bilibili platform, the BIT team and
+                        the YiYe-China team broadcast the science popularization of colorectal cancer and the publicity
+                        of synthetic biology. The live broadcast introduced the clinical symptoms, hazards, mainstream,
+                        detection methods and the optimized detection methods respectively conceived by the two teams of
+                        colorectal cancer. The live broadcast was watched by nearly 5000 people (about 500 people). The
+                        Bilibili platform is mainly used
+                        <br>
+                    </p>
+                    <div class="container-col-7"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="Figure 8"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/4/45/T--BIT--partnership8.1.png"
+                                style="width: 50%;">
+                            <img src="https://2021.igem.org/wiki/images/7/7a/T--BIT--partnership8.2.png"
+                                style="width: 50%;">
+                            <img src="https://2021.igem.org/wiki/images/6/60/T--BIT--partnership8.3.png"
+                                style="width: 50%;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Figure 8. The sermon module
+                        </p>
+
+                    </div>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp; by young people aged 14-30. At the same time, the low age and early onset of
+                        colorectal cancer is not well known to the public. Therefore, our live broadcast is for the
+                        "target audience". Through this live broadcast, we can let them know more about colorectal
+                        cancer. So we can introduce them to our programs and broaden the audience for our products. In
+                        this live broadcast, there were also CRC researchers who provided valuable advice during the
+                        live broadcast. His suggestions on "advantages and disadvantages of current markers and
+                        detection methods used" and "how to solve false positives" made us think deeply. Therefore, we
+                        also arranged special experiments in the follow-up improvement of the project to solve these
+                        problems. The problem. At the same time, he also suggested us to increase carrier experiments.
+                        After in-depth communication with him, we will also take this as one of our future improvement
+                        directions.
+
+                    </p>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+{{BIT/Footer}}

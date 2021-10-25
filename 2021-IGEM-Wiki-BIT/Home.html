@@ -1,0 +1,439 @@
+{{BIT/loading}}
+{{BIT/GuideBar}}
+
+<html>
+<head>
+<style>
+#home_logo, #sideMenu { display:none; }
+  #sideMenu, #top_title, .patrollink {display:none;}
+  #content { margin-left:0px;margin-right:0px; margin-top:-7px; padding:0px; width:100%;background-color: rgba(0,0,0,0);}
+  #bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+  #bodyContent a[href ^="https://"], .link-https { padding-right:0px;}
+  .judges-will-not-evaluate { border: 4px solid #F42534; padding: 2% !important; width: 92%!important;}
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+ 
+
+
+	<!--链接动画网站-->	
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" rel="stylesheet">  
+<style>
+ 
+    body
+    {
+        float: left; /* 必要 */
+        display: block;
+        width:100%;       
+        background-image:url("https://2021.igem.org/wiki/images/a/ad/T--BIT--homepageback.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100% 100%; 
+        background-attachment:fixed;  
+        /* 控制背景是否跟随页面滚动 */
+        margin:0% 0%;
+    }
+	                .changzi
+			{
+				position:fixed;
+				height:100%;
+                                width:100%;
+                                right:0%;
+                                margin-right:0%;
+				z-index:-1;
+				
+			}
+
+			.changzi1
+			{
+                                position:fixed;
+				width:100%;
+				height:100%;
+				z-index:-1;
+			}
+                        .changzi2
+			{
+				position:fixed;
+				width:100%;
+				height:100%;
+				z-index:-1;
+				
+			}
+			.animate__animated.animate__tada.animate__infinite{
+				position: fixed;
+				float: left;
+				width: 50%;
+				height: auto;
+				margin-top: 13%;
+			}
+			.animate__animated.animate__tada.animate__infinite img{
+                                position: fixed;
+				width: 54%;        
+				height: auto;
+				margin-left: 56%;
+				z-index:9;
+			}
+			.animate__animated.animate__heartBeat.animate__infinite {
+				position: fixed;
+				float: left;
+				width: 15%;
+				height: auto;
+				margin-top: 30%;
+				margin-left: 75%;
+			}
+
+			.animate__animated.animate__heartBeat.animate__infinite img {
+                                position:fixed;
+				width: 100%;
+				z-index: 9;
+			}
+			
+			.changzi img
+			{
+				position:fixed;
+				height:24.5%;
+                                width:auto;
+                                right:0%;
+                                margin-right:0%;
+                               
+			}
+			.changzi1 img
+			{
+			    margin-left:8%;
+                position:fixed;
+				height:24.5%;
+				width:auto;
+			}
+                        .changzi2 img
+			{
+                position:fixed;
+				height:24.5%;
+				width:auto;
+			}
+    
+        #A_left
+        {
+            margin-top:0% !important;
+	    position:fixed !important;
+            top:0% !important;
+            /*background-color: darkseagreen; */
+            width: 99.9% !important;
+            height: 100% !important;
+            float: left !important; /* 必要 */
+            
+        }
+		    
+            #A_sign
+            {
+				
+                /*background-color: rgb(139, 95, 160);*/
+                position:fixed;
+                height:7%; 
+                width:auto;  
+                paddind-left:5%;    
+                paddind-top:5%;   
+                z-index: 10 !important;
+                          
+            }
+
+            #A_sign img
+            {
+                height:100%; 
+                z-index: 10 !important;
+            }
+
+            #A_word
+            {
+		        margin-top:15%;
+                margin-left:7%;
+				color:rgb(51,51,51) !important;
+				font-family:Swis721 Cn BT;
+				
+            }
+            #A_line
+            {
+                z-index:100;		
+                /*background-color: rgb(142, 241, 127);  */        
+                width: 100%;
+                height: 55%;
+                /* margin-top: 5px; */
+                text-align: center;
+                font-weight: bolder;
+                font-size: 60px !important;
+                font-family: Adobe Gothic Std B;
+				
+               
+                text-shadow: 4px 4px rgba(106, 105, 105, 0.469);
+				line-height:80px !important;
+                /* 左右 上下 */
+                
+             }
+            #A_line span
+            {
+                color:#CA1F78;
+
+            }
+			
+			#A_photo
+			{
+				position:absolute;
+				width:100%;
+				height:100%;
+			}
+			
+			#A_photo img
+			{
+				padding-top:5%;
+				height:90%;
+			        width:90%;
+			}
+			#A_sign1
+			{
+				height:3%;
+                                width:auto; 
+				position:absolute;   
+                                padding-left: 5%;
+				padding-top: 1%;
+                                z-index: 10;
+				
+			}
+			#A_sign1 img
+			{
+                                z-index: 10;
+				height:100%;
+                                width:100%; 
+			}
+			    #C_qiu 
+				{
+					position;: fixed;
+					/* background-color: aquamarine ;   */
+					float: left;
+					width: 50%;
+					height: auto;
+					margin-top: 13%;                
+				}
+
+				#C_qiu img
+				{
+					width: 54%;        
+					height: auto;
+					margin-left: 56%;   
+				}
+
+				#C_kuang
+				{
+					position: fixed;
+					overflow: hidden;
+					
+					float: left;
+					width: 50%;
+					height: auto; 
+                    margin-left :48%;					
+					   
+			 
+				}
+				#C_kuang img
+				{
+                    position: fixed;
+					overflow: hidden;
+					width:60%;
+				}
+                 #C_introduction
+			        {
+				position:fixed;
+				width:100%;
+				height:100%;
+			}
+			#C_introduction_content
+			        {
+				position:fixed;
+				width:100%;
+				height:100%;
+			}
+			#C_introduction img
+			{
+				padding-top:7.5%;
+                                padding-left:13%;
+			        width:68%;
+                                height:auto;
+			}
+			#C_introduction_content img
+			{
+			
+				padding-top:15%;
+                                padding-left:27%;
+			        width:40%;
+                                height:auto;
+								z-index:10;
+			}
+			
+
+        #A_right
+        {
+            position:fixed;
+	    right:0%;
+            background-color: rgb(248, 223, 247);
+            width:0.1%;
+            height: auto;
+            display: block;  
+        }
+		#A_gif
+		{
+		   position :fixed;
+		   width:15%;
+		   margin-top:12%;
+		   
+		   z-index:4;
+		}
+		#A_gif img
+		{
+		   position :fixed;
+		   width:30%;
+		   margin-top:5%;
+		   z-index:4;
+		}
+		#B_content
+	{
+	   position :fixed;
+	    margin-top:10%;
+	    margin-left:4%;
+		padding:2%;
+	    
+	    border-radius:10px;
+	    font-family: Times New Roman;
+		font-size: 20px;
+		
+		line-height:30px;
+		z-index:5;
+		width:18%;
+		color:rgb(51,51,51);
+		font-family:Swis721 Cn BT;
+		
+	}
+	#B_content span
+	{
+	    color:#CA1F78;
+	}
+</style>
+
+</head>
+
+<body>
+<div id="A_sign1">
+            <img src="https://2021.igem.org/wiki/images/6/6c/T--BIT--homepage8.png">
+        </div>
+<div id="fullpage">
+<!--页面分为左右两块，右侧为导航栏
+fullpage的第一页为section0-->
+<!---->
+    <div class="section active" id="section0">
+        <div class="changzi">
+		<img src="https://2021.igem.org/wiki/images/4/4e/T--BIT--homepage1.png">
+		</div>
+		<div id="A_left">
+         <div id="A_gif">
+		    <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--home_gif1.gif" alt=""/>
+         </div>		 
+                
+            
+            <div id="A_word"> <!-- 主界面两个颜色交替的文字-->
+                <div id="A_line"><div><span>Early screening</span> of <span>colorectal</span></div></div>
+                <div id="A_line"><div><span> cancer(CRC)</span> based on</div></div>
+               
+                <div id="A_line"><div><span>CRISPR/Cas12-coupled SlipChip</span></div> </div>
+               
+                <div id="A_line"><div>for detection of<span> miRNA</span></div> </div>
+            </div>
+        </div>
+        
+        <div id="A_right">
+            
+        </div>
+    </div>
+    <div class="section" id="section1">
+            <div class="changzi1"><!--肠子（转正）-->
+				<img src="https://2021.igem.org/wiki/images/5/5f/T--BIT--homepage2.png" usemap="#big">
+				<map name="big" id="big">
+                <area onclick="fullpage_api.moveSectionDown();" shape="circle" coords="815,374,250" noherf  alt="Venus" />
+		    </div>
+			
+			
+			
+			<div id="B_content">
+			<div id="B_bold" style="font-size:25px;"><b>Introduction:</b></div>
+			<span>Early screening</span> and treatment of <span>CRC</span> has been proved to be conducive to <span>reducing</span> the mortality rate of CRC. 
+			Currently, most diagnostic methods do not meet the requirements of rapid, sensitive and specific screening of CRC.
+			We have developed an <span>early screening system for CRC</span> with the above advantages. 
+			</div>
+	        
+            <div class="animate__animated animate__heartBeat animate__infinite">
+                 <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--homepage3.png">
+            </div>
+		    
+    </div>
+    <div class="section" id="section2">
+       
+        
+		<div class="changzi2"><!--放大的肠子-->
+		     <img src="https://2021.igem.org/wiki/images/3/3f/T--BIT--homepage4.png">
+		</div>
+		<div class="animate__animated animate__tada animate__infinite"><!--细菌小人动画-->
+		     <img src="https://2021.igem.org/wiki/images/b/b8/T--BIT--homepage5.png">
+		</div>
+        <div id="C_kuang"><!--introduction框局部-->
+            <img src="https://2021.igem.org/wiki/images/4/4a/T--BIT--home_kuang_2.png">            
+        </div>
+       </div>
+	<div class="section" id="section3">
+           
+			<div id="C_introduction"><!--introduction框（转正）-->
+				<img src="https://2021.igem.org/wiki/images/c/cd/T--BIT--homepage7.png">
+			</div>
+			
+			<div id="C_introduction_content"><!--introduction框（转正）-->
+				<img src="https://2021.igem.org/wiki/images/6/63/T--BIT--home10.png">
+			</div>
+			
+        
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+	var a,b,c;
+	a=$(window).height();	
+	$(window).scroll(function(){		
+		var b=$(this).scrollTop();
+		$(".list").each(function(){
+			c=$(this).offset().top;							
+			if(a+b>c){
+				$(this).addClass("move");
+			}
+			else{
+				$(this).removeClass("move");
+			}
+		});	
+	});
+				
+});
+</script>
+
+<script type="text/javascript" src="https://2021.igem.org/wiki/index.php?title=Team:BIT/JS/homepage&action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2021.igem.org/wiki/index.php?title=Team:BIT/JS/fullpage&action=raw&ctype=text/javascript"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        // menu: '#menu',
+        lazyLoad: true
+    });
+</script>
+
+</body>
+
+</html>

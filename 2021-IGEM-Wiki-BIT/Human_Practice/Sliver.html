@@ -1,0 +1,581 @@
+{{BIT/loading}}{{BIT/GuideBar}}
+
+<html>
+<link rel="stylesheet" type="text/css" href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/title_roof&action=raw&ctype=text/css" />
+
+<link rel="stylesheet" type="text/css" href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/word_page&action=raw&ctype=text/css" />
+<!-- <link rel="stylesheet" type="text/css" href="./Sliver.css" /> -->
+
+<script type="text/javascript" src="https://2021.igem.org/wiki/index.php?title=Template:BIT/JS/word_page&action=raw&ctype=text/javascript"></script>
+<style>
+    #top_logo {
+        z-index: 10 !important;
+    }
+    
+    #words p {
+        font-size: .9rem;
+        line-height: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    
+    #words {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+    /* .bgcolor {
+    background: linear-gradient(#fbd0c6, #a5d6a6);
+    position: relative;
+    height: 4000px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+} */
+    
+    .W_para {
+        /* background-color: aqua; */
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    
+    .W_p_title {
+        /* background-color: aquamarine; */
+        width: 94%;
+        height: auto;
+        padding-top: 2%;
+        padding-left: 6%;
+        padding-bottom: 1%;
+        font-size: 35px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 40px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .W_p_title2 {
+        /* background-color: aquamarine; */
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        /* padding-left: 6%; */
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 30px !important;
+        text-align: center !important;
+        color: rgb(126, 187, 85) !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .W_p_title3 {
+        /* background-color: aquamarine; */
+        width: 94%;
+        height: auto;
+        padding-top: 2%;
+        padding-left: 6%;
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 30px !important;
+        color: rgb(237, 125, 49) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+    
+    .W_p_con {
+        /* background-color: burlywood; */
+        width: 88%;
+        height: auto;
+        padding-left: 6%;
+        padding-right: 6%;
+        font-size: 20px;
+        text-indent: 2em;
+        line-height: 30px !important;
+        font-family: Times New Roman;
+        text-align: justify !important;
+    }
+    
+    .W_p_pic {
+        /* background-color: cornflowerblue; */
+        width: 100%;
+        height: auto;
+        float: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .W_p_caption {
+        /* background-color: cornsilk; */
+        width: 100%;
+        height: auto;
+        text-align: center !important;
+        /* display: flex; */
+        font-size: 18px;
+        font-family: Times New Roman;
+    }
+    
+    .P1-1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px!important;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .P1-1 img {
+        /* background-color: darkgreen; */
+        width: 200px!important;
+        height: 200px!important;
+    }
+    
+    .P3-4 {
+        /* background-color: darkgreen; */
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 200px!important;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .P3-4 img {
+        /* background-color: darkgreen; */
+        width: 200px!important;
+        height: 366px!important;
+    }
+    
+    .P4-3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 266px!important;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .P4-3 img {
+        /* background-color: rgb(134, 213, 246); */
+        width: 266px !important;
+        height: 200px!important;
+    }
+    
+    .Pbiao {
+        width: 500px!important;
+        height: auto;
+        margin-bottom: 3px;
+        justify-content: center;
+    }
+    
+    .Pbiao img {
+        /* background-color: rgb(134, 213, 246); */
+        width: 500px !important;
+        height: 250px!important;
+    }
+    
+    .P18 {
+        /* background-color: darkgreen; */
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 320px!important;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .P18 img {
+        /* background-color: darkgreen; */
+        width: 320px!important;
+        height: 366px!important;
+    }
+    
+    .page_title {
+        /* background-color: aquamarine; */
+        width: 94%;
+        height: auto;
+        padding-top: 2%;
+        padding-left: 6%;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 60px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+</style>
+
+<body>
+    <div class="background" style="height: 100%; top: -30px">
+        <div class="bgcolor" style="height: 100%;">
+            <img id="top_logo" src="https://2021.igem.org/wiki/images/b/b4/T--BIT--top_logo.png">
+
+            <div id="title">
+                <div id=title1>
+                    <a href="#t1" onmouseover="titlefun(this,1)" onmouseout="titlefun2(1)">Silver</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/a/ab/T--BIT--title1.png" id=title_bgimg1>
+                <img id="title_mark1" src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png">
+
+                <div id=title2>
+                    <a href="#t2" onmouseover="titlefun(this,2)" onmouseout="titlefun2(2)">Thinking and Discussion</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg2">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark2">
+
+                <div id=title3>
+                    <a href="#t3" onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)">Questionnaire investigation</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg3">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark3">
+
+                <div id=title4>
+                    <a href="#t4" onmouseover="titlefun(this,4)" onmouseout="titlefun2(4)">Learn</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg4">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark4">
+
+                <div id=title5>
+                    <a href="#t5" onmouseover="titlefun(this,5)" onmouseout="titlefun2(5)">Collaborations</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg5">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark5">
+
+
+                <div id=title6>
+                    <a href="#t6" onmouseover="titlefun(this,6)" onmouseout="titlefun2(6)">Education & Communication</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg6">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark6">
+
+
+                <div id=title7>
+                    <a href="#t7" onmouseover="titlefun(this,7)" onmouseout="titlefun2(7)">Summary</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg7">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark7">
+
+
+
+
+            </div>
+
+            <div id="words" style="height: 96%;">
+
+                <div class="W_para">
+                    <div id="t1"></div>
+
+                    <div class="page_title">Silver</div>
+
+                    <div class="W_p_con">This year our project aims at early diagnosis and treatment of CRC. Based on the consideration of the impact of COVID-19 prevention and the convenience of big data on the Internet, we insists on "online and offline ", "interview and
+                        return visit", and "educate and being educated" in the education field in 2021. We conducted research on relevant literature, in-depth public questionnaire visits to understand, to solicit opinions from experts and scholars, return
+                        visits to the masses and other activities. During the masses and other activities, in the course of these activities, we complete the project design, implementation and summary, combined with human practice to obtain feedback,
+                        in order to promote and improve our project. This can help us consider the future plan of the project so that we can better serve the society. </div>
+                </div>
+
+                <div class="W_para">
+                    <div id="t2"></div>
+
+                    <div class=W_p_title>Thinking and Discussion</div>
+
+                    <div class="W_p_con"> In the project setting stage, our team members learned about colorectal cancer (CRC) through literature research, group discussions and other measures. We conducted a detailed background survey and data analysis on the improvement
+                        of gastrointestinal cancer. Based on the research results, we discussed our project with Professor PI Deng Yulin, associate professor Lv Xuefei and professor Li Xiaoqiong. Under the guidance and suggestions of the professors, we
+                        completed the preliminary topic selection of the project. </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/8/88/T--BIT--Sliver-p1.png">
+                            <p class="W_p_caption" style=" font-size:15px;">Fig1：Regular meeting exchange report</p>
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/0/09/T--BIT--Sliver-p2.png">
+                            <p class="W_p_caption" style=" font-size:15px;">Fig2：Brainstorm </p>
+                        </div>
+                    </div>
+                    <div class="W_p_con">After the report, team BIT began to conduct literature research and regular meeting discussions and carried out brainstorming according to the research results. It was determined that the goal of this year’ s project was to achieve
+                        early diagnosis and treatment of colorectal cancer and to design a low-cost, high-sensitivity and high-throughput colorectal cancer marker detection system. At the same time, the team completed the assignment of responsibilities,
+                        and set the biological group, hardware group and modeling group, laying the foundation for the subsequent project.
+                    </div>
+                </div>
+
+                <div class="W_para">
+                    <div id="t3"></div>
+
+                    <div class=W_p_title>Questionnaire investigation</div>
+
+                    <div class="W_p_con">In order to count people’s understanding of CRC and the acceptability of CRC screening, we designed a questionnaire for the general public on the basic situation of CRC. We received a total of 107 questionnaires, protected the personal
+                        information of those who filled out the questionnaires, and performed statistical analysis on the questionnaires received, which played a guiding role in our project design and HP development. </div>
+
+                    <div class="W_p_pic">
+                        <div class="Pbiao">
+                            <img src="https://2021.igem.org/wiki/images/3/30/T--BIT--Sliver-p3.png">
+                        </div>
+                    </div>
+                    <div class="W_p_pic">
+                        <div class="Pbiao">
+                            <img src="https://2021.igem.org/wiki/images/e/e8/T--BIT--Sliver-p4.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig3,4： Questionnaire results</p>
+
+                    <div class="W_p_con">These data prove that our project has realistic demand and basic audiences, which makes us confident to continue to promote the project. At the same time, the results of the questionnaire also tell us that the relevant popular science
+                        propaganda is very necessary.</div>
+                </div>
+
+                <div class="W_para">
+                    <div id="t4"></div>
+
+                    <div class=W_p_title>Learn</div>
+
+                    <div class=W_p_title2>Space Life Science and Medical Engineering Training Course</div>
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/6/64/T--BIT--Sliver-p5.png">
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/5/52/T--BIT--Sliver-p6.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig5,6：Group photo of space life science and medical engineering training course</p>
+
+                    <div class="W_p_con"> Some members of our team participated in the training course in space life science and medical engineering. Professors of IAA were invited to teach the course. The contents of the course were related to synthetic biology and microfluidic
+                        chips, the application of organ chips, and so on. At the same time, we had an exchange with the synthetic biology experts in the course of this year 's iGEM project. The experts are very interested in our ideas this year, and put
+                        forward some professional opinions and analysis to us, which is of great significance to the construction and promotion of our project. </div>
+                    <br>
+                    <div class=W_p_title2>Life Science and Intelligent Medical Summit Forum</div>
+
+                    <div class="W_p_con"> Our team members were fortunate to participate in the life science and intelligent medical summit forum in the 23rd Annual Meeting of the China Association for Science and Technology. </div>
+                    <div class="W_p_con">In this forum, we have a longer-term goal to achieve: whether our project can be combined with auxiliary diagnosis and treatment to provide a reference for early CRC screening and can validate our project for early CRC screening by
+                        collecting more data to form our dataset.</div>
+                    <div class="W_p_con">
+                        In the training courses and forum meetings, we can learn from the reports of various experts and learn from the experts, which plays a very important role in the promotion of our project.
+                    </div>
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/4/4e/T--BIT--Sliver-p7.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.7: Meeting venue</p>
+                </div>
+
+                <div class="W_para">
+                    <div id="t5"></div>
+
+                    <div class=W_p_title>Collaborations</div>
+
+                    <div class=W_p_title2>With LZU-CHINA</div>
+
+                    <div class="W_p_con">Members of team BIT and team LZU-CHINA held an exchange meeting in the Beijing institute of technology. During the exchange meeting, members of the two teams introduced and discussed the relevant content and technology of their respective
+                        teams, exchanged, discussed and improved each other.</div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/4/4d/T--BIT--Sliver-p8.png">
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/5/53/T--BIT--Sliver-p9.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.8.9： Communication with LZU-CHINA</p>
+
+                    <div class="W_p_con"> First of all, two team leaders reported the 2021 project. During the communication, team LZU-CHINA put forward many constructive questions to us. During the communication, the two teams exchanged experimental experience and lessons,
+                        which helped us to improve the experimental scheme.</div>
+
+                    <br>
+
+                    <div class=W_p_title2>With BIT-China</div>
+
+                    <div class="W_p_con">we held an exchange meeting with team BIT-China in Beijing University of Technology. At this exchange meeting, the members of the two teams reported on the progress of their completed projects and exchanged questions with each other.
+                        We have gained many constructive suggestions in the exchange.</div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/9/9f/T--BIT--collaborations4.png">
+                        </div>
+                    </div>
+
+                    <p class="W_p_caption">Fig.10：Communication with BIT-China</p>
+
+                    <br>
+
+                    <div class=W_p_title2>With YiYe_China</div>
+
+                    <div class="W_p_con">We conducted two exchanges with team Yiye-China using Tencent meeting.
+                    </div>
+
+                    <div class="W_p_con">The first exchange was the exchange of projects between our two teams. Both of our two teams carried out early screening for CRC. Through the exchange, we complemented the methods of the two teams and communicated the feasibility of
+                        technology: giving suggestions to each other, helping us better complete the project.
+                    </div>
+
+                    <div class="W_p_con">At the same time, according to the analysis of the questionnaire, we started the planning of the first online popular science lecture on CRC, and carried out the online popular science lecture on CRC in cooperation with Bilibili on
+                        July 30.
+                    </div>
+
+                    <br>
+
+                    <div class=W_p_title2>CCiC</div>
+
+                    <div class="W_p_con">The ccic, as a big stage for the exchange of iGEM teams in major universities in China, has played a very important role in the exchange of human practice. Our team also participated in the 8th China Regional iGEMer Conference (CCiC).
+                    </div>
+                    <div class="W_p_con"> In the conference, each team carries out a comprehensive display of the project, the professional review teacher asks us questions and gives me suggestions for the project, and then opens the communication room to communicate with
+                        other teams. In terms of HP and wiki, it carries out experience discussion with excellent teams:
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/d/d9/T--BIT--Sliver-p11-1.png">
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/7/79/T--BIT--Sliver-p11-2.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.11：CCiC</p>
+
+                    <div class="W_p_con">When we listen to the reports of other teams, we recorded their advantages and improve their learning. In this exchange, our team has gained a lot.
+                    </div>
+
+
+                    <div class=W_p_title2>Meetup in Bluepha</div>
+
+                    <div class="W_p_con">Bluepha is a synthetic biology high-tech enterprise founded by iGEMers. It has been committed to promoting and popularizing synthetic biology education and it is also a leader in the field of synthetic biology in China. Our team BIT
+                        went to the lab to visit and study and communicated with the other four teams.
+
+                    </div>
+
+                    <div class="W_p_con">Team BIT, team RDFZ, team GJU China and team NDNF-China all introduced their project and exchanged discussions with each other.
+
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/5/57/T--BIT--collaborations5.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.12： Meetup in Bluepha</p>
+                </div>
+
+                <div class="W_para">
+                    <div id="t6"></div>
+
+                    <div class=W_p_title>Education & Communication</div>
+
+                    <div class=W_p_title2> Online educaiton</div>
+                    <div class="W_p_con">In China, the Wechat platform is a propaganda tool widely used by the media and enterprises. The production and forwarding of its push can be used as a tool to increase publicity. Every day, it can send articles to fans who are concerned
+                        about the account for the project and iGEM science popularization. The contents of the articles include team promotion, project introduction, the popularization of synthetic biology, CRC science popularization articles and the
+                        sharing of excellent papers.
+                    </div>
+                    <div class="W_p_con"> Similarly, we created WeChat emoticons belonging to team BIT, as well as key rings, bookmarks and other creative products to promote our iGEM and project.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P1-1">
+                            <img src="https://2021.igem.org/wiki/images/e/e0/T--BIT--Sliver-p13-1.png">
+                        </div>
+                        <div class="P1-1">
+                            <img src="https://2021.igem.org/wiki/images/5/5e/T--BIT--Sliver-p13-2.png">
+                        </div>
+                        <div class="P1-1">
+                            <img src="https://2021.igem.org/wiki/images/8/86/T--BIT--Sliver-p13-3.png">
+                        </div>
+                    </div>
+
+                    <p class="W_p_caption">Fig.13: emoticons</p>
+
+                    <div class="W_p_con">If you want to download, please search ' iGEM BIT ' on WeChat platform.
+                    </div>
+                    <div class="W_p_con"> We also used other online promotions. On the Bilibili platform, team BIT and team YiYe-China conducted a live broadcast of colorectal cancer science promotion and synthetic biology promotion. The live broadcast introduced the clinical
+                        symptoms, hazards, mainstream of colorectal cancer, detection methods and more optimized detection methods conceived by the two teams respectively. This live broadcast has nearly 5,000 popularity points (approximately 500 people)
+                        watched this live broadcast. The main users of the Bilibili platform are young people aged 14-30. At the same time, the younger age and early onset of colorectal cancer are not well known to the public. Therefore, our live broadcast
+                        is aimed at the "target audience". Through this live broadcast, we can let them know more about colorectal cancer. So we can introduce our project to them and broaden the audience base of the product.
+                    </div>
+                    <div class="W_p_con">In this live broadcast, some researchers study CRC provided us with very valuable opinions during the live broadcast. His suggestions such as "the pros and cons of the current markers and the detection methods used" and "how to solve
+                        the problem of false positives" all make us think. Therefore, we also arranged special experiments to solve these problems in the follow-up project improvement. problem. At the same time, he also recommended that we increase the
+                        carrier experiment, and after in-depth communication with him, we will also take this as one of our future improvement directions.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P3-4" style="margin-top: 10px;">
+                            <img src="https://2021.igem.org/wiki/images/8/8b/T--BIT--Sliver-p14.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.14: Listener questions</p>
+
+                    <br>
+
+                    <div class=W_p_title2> Offline lectures</div>
+                    <div class="W_p_con">Team BIT reported an offline lecture on the project on the campus of Beijing University of Technology. In this event, our team introduced students to synthetic biology, iGEM competition and our team project content. Through this lecture,
+                        students from different majors can understand synthetic biology and iGEM competition and understand the importance of early detection of CRC.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/d/d1/T--BIT--Sliver-p15.png">
+                        </div>
+                    </div>
+
+                    <p class="W_p_caption">Fig.15：lectures for college students</p>
+
+                    <div class="W_p_con">Moreover, we continued to hold two lectures and invited the other three teams to carry out publicity with us. We held a joint popular science lecture with BIT-China, iBowu-China and BUCT-China. Four teams combined online and offline
+                        to explain why ethics is so important.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/4/42/T--BIT--Sliver-p16-1.png">
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/4/4d/T--BIT--Sliver-p16-2.png">
+                        </div>
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/9/90/T--BIT--Sliver-p16-3.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.16：Science propaganda scene</p>
+
+                    <div class="W_p_con">Also we prepared science lectures for middle school students.To push the knowledge and charm of iGEM into middle school education, we went to Beijing Yucai Middle School. In the lecture, our team leader Liu Zhoumi introduced iGEM and
+                        synthetic biology to middle school students who are full of unknown but full of imagination about iGEM. He introduced our team and our project so that students have a deeper understanding of iGEM. During the lecture, he also linked
+                        synthetic biology with the interesting project of iGEM to arouse students' divergent thinking and helped them better understand synthetic biology.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P4-3">
+                            <img src="https://2021.igem.org/wiki/images/0/0f/T--BIT--Sliver-p17.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.17：Offline lecture for middle school students</p>
+
+                    <div class="W_p_con">In order to increase the publicity of iGEM and our project, during the holidays we organized our team members to conduct community publicity activities in the communities where they live. They conducted iGEM and colorectal cancer research
+                        activities with relatives and friends, community residents, and community workers. Our community promotion covers all age groups. Our community propaganda has expanded the social influence of iGEM, which can help us let more people
+                        understand colorectal cancer, understand our project, and provide an audience basis for our project.
+                    </div>
+
+                    <div class="W_p_pic">
+                        <div class="P18">
+                            <img src="https://2021.igem.org/wiki/images/2/28/T--BIT--Sliver-p18.png">
+                        </div>
+                    </div>
+                    <p class="W_p_caption">Fig.18：We introduce colorectal cancer to people of different ages</p>
+                </div>
+
+                <div class="W_para">
+                    <div id="t7"></div>
+
+                    <div class=W_p_title>Summary</div>
+
+                    <div class="W_p_con">Through literature research, public information feedback and other preliminary research, we have counted the data, so that we can determine that this year ’ s project is of practical significance and is required by the public. Similarly,
+                        according to the results of previous research, we also determine that we should carry out popular science lectures on related projects to help more people understand CRC and its detection methods as well as the trend of synthetic
+                        biology, and at the same time enter the classroom for the dissemination of synthetic biology.
+                    </div>
+                    <div class="W_p_con"> It is through these HP activities that we can get enough information at the beginning of the project, the middle of the project and the later stage of the project, constantly communicate with the audience, and get their opinions to
+                        improve the project. Communicating with other iGEM teams can also give us experience in projects, as can popular science campaigns with them to promote synthetic biology, iGEM and our projects.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
+
+{{BIT/Footer}}

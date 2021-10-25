@@ -1,0 +1,318 @@
+<html>
+<head>
+<style>
+
+
+#home_logo, #sideMenu { display:none; }
+#sideMenu, #top_title, .patrollink {display:none;}
+#content { margin-left:0px;margin-right:0px; margin-top:-7px; padding:0px; width:100%;background-color: rgba(0,0,0,0);}
+#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+#bodyContent a[href ^="https://"], .link-https { padding-right:0px;}
+.judges-will-not-evaluate { border: 4px solid #F42534; padding: 2% !important; width: 92%!important;}
+
+
+li{list-style: none !important;}
+
+
+
+            #first-page{
+                z-index: 9;
+                position: fixed;
+                right: -400px;
+                height: 612px;
+                width: 517px;
+                background-image: url("https://2021.igem.org/wiki/images/7/7b/T--BIT--guidebar_1.png");
+                
+                /*
+                animation: myfirst 5s;
+                -webkit-animation: myfirst 5s;
+                */
+            }
+            @keyframes myfirst
+            {
+                0% {right: -400px;}
+                /*
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                */
+                100%{right:-135px;}
+            }
+            @-webkit-keyframes myfirst
+            {
+                0% {right: -135px;}
+                /*
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                */
+                100%{right:-400px;}
+            }
+            /*
+            @keyframes mythird
+            {
+                0% {right: -135px;}
+                
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                
+                100%{right:-400px;}
+            }
+            @-webkit-keyframes mythird
+            {
+                0% {right: -400px;}
+            
+                25%{right: -388px;}
+                50%{right: -258px;}
+                75%{right: -130px;}
+                
+                100%{right:-135px;}
+            }
+            */
+            .nav1{
+list-style-image: none !important;
+                background-color: rgba(0,0,0,0);
+                position: absolute;
+                left: 70px;
+                top: 60px;
+                width: 220px;
+                text-align: center;
+                
+            }
+            .nav1 li{
+                background-color: rgba(0,0,0,0);
+                margin:20px 0;
+                
+            }
+            .nav1 li a{
+                text-decoration:none;
+                background-color: rgba(0,0,0,0);
+                font: 2em Swis721 Cn BT;
+                font-weight:bold; 
+                color:white;
+            }
+            .nav li a:hover{
+                color: rgb(46,139,87);
+            }
+		    #firstpage ul {
+                        list-style-image: none !important;
+                        background-color: rgba(0,0,0,0);
+		        margin: 0;
+		        padding: 0;
+		        list-style: none;
+                
+		        width: 150px; /* Width of Menu Items */
+		       
+		    }
+		    #firstpage ul li {
+                        background-color: rgba(0,0,0,0);
+		        position: relative;
+                        
+		    }  
+           
+            
+		    #firstpage ul li a {
+                background-color: rgba(0,0,0,0);
+		        display: block;
+		        text-decoration: none;
+		        color: #777;
+		        background: #fff; /* IE6 Bug */
+		        padding: 5px;
+		    }
+            .second-page ul li a{
+                font: 1.5em Swis721 Cn BT;
+            }
+            .second-page ul{
+list-style-image: none !important;
+                position: absolute;
+                text-align: center;
+                width: 350px;
+                left:30px;
+                top:40px;
+                margin:3px 0;
+
+            }
+            .second-page{
+                width: 410px;
+                height: 360px;
+                
+                position: absolute;
+                right:300px;
+                animation: mysecond 1s;
+                -webkit-animation: mysecond 1s;
+
+            }
+            @keyframes mysecond
+            {
+                0% {opacity: 0;}
+                40%{opacity: 0;}
+                /*
+                50%{background-color: rgba(0,0,0,0.5);}
+                75%{background-color: rgba(0,0,0,0.75);}
+                */
+                100%{opacity: 1;}
+            }
+            @-webkit-keyframes mysecond
+            {
+                0% {opacity: 0;}
+                40%{opacity: 0;}
+                /*
+                50%{background-color: rgba(0,0,0,0.5);}
+                75%{background-color: rgba(0,0,0,0.75);}
+                */
+                100%{opacity: 1;}
+            }
+            #second-page-1{
+                height:800px;
+                top:-50px;
+                display: none;
+                background-repeat: no-repeat;
+                background-size:452px;
+                
+                background-image: url("https://2021.igem.org/wiki/images/8/86/T--BIT--guidebar_2.2.png");
+            }
+            #second-page-1 ul{top:120px;}
+            #second-page-2{
+                display: none;
+                background-repeat: no-repeat;
+                background-image: url("https://2021.igem.org/wiki/images/a/a8/T--BIT--guidebar_2.png");
+            }
+            #second-page-3 ul{top:-10px;}
+            #second-page-3{
+                display: none;
+                background-repeat: no-repeat;
+                background-image: url("https://2021.igem.org/wiki/images/4/4a/T--BIT--guidebar_2.3.png");
+            }
+            #second-page-3 ul{top:20px;}
+            #second-page-4{
+                display: none;
+                background-image: url("https://2021.igem.org/wiki/images/a/a8/T--BIT--guidebar_2.png");
+            }
+		    #tips{
+                position: absolute;
+                bottom: 200px;
+                width: 180px;
+                left: 120px;
+            }
+            #overlay{
+                z-index:9;
+            position:fixed;
+            display: none;
+            top:0px;
+            left:0px;
+            bottom:0px;
+            right:0px;
+            background-color:rgba(0,0,0,0.7);
+            cursor: pointer;
+            /* -webkit-filter: blur(10px) grayscale(50%); */
+        }
+</style>
+<script>
+    function move(obj1)
+    {
+        obj1.style.animation="myfirst 1s";
+        //obj.style.-webkit-animation="myfirst 5s";
+        obj1.style.right="-135px";
+        var obj2 = document.getElementById("overlay");
+        obj2.style.display="unset";
+        
+    }
+    function away()
+    {
+        var obj1 = document.getElementById("first-page");
+        obj1.style.animation="mythird 1s";
+        obj1.style.right="-400px";
+        //obj1.style.transition="all 1s";
+        
+        for(var i=1;i<=3;i++)
+        {
+            var obj = document.getElementById("second-page-"+i);
+            obj.style.display="none";
+        }
+        
+        var obj2 = document.getElementById("overlay");
+        obj2.style.display="none";
+    }
+    function become(id)
+    {
+        for(var i=1;i<=4;i++)
+        {
+            if(i!=id)
+            {
+                var obj = document.getElementById("second-page-"+i);
+                obj.style.display="none";
+            }
+         
+        }
+        var obj1 = document.getElementById("second-page-"+id);
+        obj1.style.display="unset";
+        
+    }
+    function miss(id)
+    {
+        var obj1 = document.getElementById("second-page-"+id);
+        obj1.style.display="none";
+    }
+</script>
+</head>
+
+<body> 
+    <div id="overlay" onclick="away()"></div>
+    <div id = "first-page" onclick="move(this)">
+        <ul class="nav1" >
+            <li><a href="https://2021.igem.org/Team:BIT">Home</a></li>
+            <li><a href="#" onclick="become(1)">Project</a></li>
+            <div class = "second-page" id = "second-page-1">
+                <ul>
+                <li><a href="#" onclick="miss(1)">Back To Previous Menu</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Description">Description</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Bio">Bio</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Parts">Parts</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Experiment">Experiment</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Hardware">Hardware</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Software">Software</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Model">Model</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Engineering">Engineering</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Implementation">Implementation</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Proof_Of_Concept">Proof_Of_Concept</a></li>
+                <li><a href="https://2021.igem.org/Team:BIT/Contribution">Contribution</a></li>
+                </ul>
+            </div>
+            <li><a href="#" onclick="become(2)" >Human Practice</a></li>
+            <div class = "second-page" id = "second-page-2">
+                <ul>
+                    <li><a href="#" onclick="miss(2)">Back To Previous Menu</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Human_Practices">Human Practice</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Sliver">Silver</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/IHP">Integrated_Practice</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Education">Education</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Communication">Communications</a></li>
+                </ul>
+            </div>
+            <li><a href="#" onclick="become(3)">Judge</a></li>
+            <div class = "second-page" id = "second-page-3">
+                <ul>
+                    <li><a href="#" onclick="miss(3)">Back To Previous Menu</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Medal">Medal</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Safety">Safety</a></li>
+                </ul>
+            </div>
+            <li><a href="#" onclick="become(4)">Team</a></li>
+            <div class = "second-page" id = "second-page-4">
+                <ul>
+                    <li><a href="#" onclick="miss(4)">Back To Previous Menu</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Members">Members</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Collaborations">Collaborations</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Partnership">Partnership</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Notebook">Notebook</a></li>
+                    <li><a href="https://2021.igem.org/Team:BIT/Attributions">Attributions</a></li>
+                    <li><a href="http://2021.igem.org/Team:BIT/Cultural_and_Creative_Products">Excellence_in_Another_Area</a></li>
+                </ul>
+            </div>
+            
+        </ul>
+        <p id="tips">Click on other areas to close the home directory</p>
+    </div>    
+</body>
+</html>

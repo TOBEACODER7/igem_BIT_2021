@@ -1,0 +1,643 @@
+{{BIT/GuideBar}}
+
+
+<html>
+<link rel="stylesheet" type="text/css"
+    href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/title_roof&action=raw&ctype=text/css" />
+
+<link rel="stylesheet" type="text/css"
+    href="https://2021.igem.org/wiki/index.php?title=Template:BIT/CSS/word_page&action=raw&ctype=text/css" />
+
+<script type="text/javascript"
+    src="https://2021.igem.org/wiki/index.php?title=Template:BIT/JS/word_page&action=raw&ctype=text/javascript"></script>
+<style>
+    #top_logo {
+        z-index: 10 !important;
+    }
+
+    #title {
+        position: fixed;
+        width: 15%;
+        top: 120px;
+        left: 5%;
+    }
+
+    #title1 a {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg1 {
+        position: relative;
+        top: -50px;
+        left: -70px;
+        width: 211.5px;
+        height: 137.25px;
+
+    }
+
+    #title_mark1 {
+        position: fixed;
+        top: 110px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title2 a {
+        position: relative;
+        top: -50px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg2 {
+        position: relative;
+        top: -100px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark2 {
+        position: fixed;
+        top: 180px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title3 a {
+        position: relative;
+        top: -110px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg3 {
+        position: relative;
+        top: -185px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark3 {
+        position: fixed;
+        top: 240px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+
+    #title4 a {
+        position: relative;
+        top: -215px;
+        left: 50px;
+        z-index: 2;
+        color: rgb(51, 51, 51);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #title_bgimg4 {
+        position: relative;
+        top: -265px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark4 {
+        position: fixed;
+        top: 250px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title5 a {
+        position: relative;
+        top: -270px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg5 {
+        position: relative;
+        top: -340px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark5 {
+        position: fixed;
+        top: 340px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+
+    #title6 a {
+        position: relative;
+        top: -370px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg6 {
+        position: relative;
+        top: -420px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark6 {
+        position: fixed;
+        top: 370px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title7 a {
+        position: relative;
+        top: -420px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg7 {
+        position: relative;
+        top: -495px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark7 {
+        position: fixed;
+        top: 440px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title8 a {
+        position: relative;
+        top: -525px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg8 {
+        position: relative;
+        top: -575px;
+        left: -52px;
+        width: 235.5px;
+        height: 90px;
+    }
+
+    #title_mark8 {
+        position: fixed;
+        top: 480px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    #title9 a {
+        position: relative;
+        top: -575px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #title_bgimg9 {
+        position: relative;
+        top: -650px;
+        left: -45px;
+        width: 245.25px;
+        height: 144px;
+    }
+
+    #title_mark9 {
+        position: fixed;
+        top: 540px;
+        left: 160px;
+        width: 150px;
+        height: 150px;
+        display: none;
+    }
+
+    /* <!-- 页面大标题 -->*/
+
+    #page_title {
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 60px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    /*  一级标题（页内导航） */
+
+    #overview,
+    #Teamcooperation,
+    #Multi-teamunion,
+    #SUMMARY {
+        font-size: 35px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 40px !important;
+        color: rgb(112, 173, 71) !important;
+        text-shadow: 2px 2px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    /* 二级标题 */
+
+    #WithLZU-CHINA,
+    #WithBIT-China,
+    #WithYiYe_China,
+    #MeetupinBluepha,
+    #CCiC,
+    #Jointsciencelecture {
+        font-size: 25px;
+        font-weight: bolder;
+        font-family: Times New Roman;
+        line-height: 30px !important;
+        text-align: center !important;
+        color: rgb(126, 187, 85) !important;
+        text-shadow: 1.5px 1.5px rgba(106, 105, 105, 0.469) !important;
+    }
+
+
+    #words {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+
+    #words p {
+        font-size: .9rem;
+        line-height: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <div class="background" style="height: 100%; top: -30px">
+        <div class="bgcolor" style="height: 100%;">
+            <img id="top_logo" src="https://2021.igem.org/wiki/images/b/b4/T--BIT--top_logo.png">
+
+            <div id="title">
+                <div id=title1>
+                    <a href="#overview" onmouseover="titlefun(this,1)" onmouseout="titlefun2(1)">Overview</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/a/ab/T--BIT--title1.png" id=title_bgimg1>
+                <img id="title_mark1" src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png">
+                <div id=title2>
+                    <a href="#Teamcooperation" onmouseover="titlefun(this,2)" onmouseout="titlefun2(2)">Team
+                        cooperation</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg2">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark2">
+                <div id=title3>
+                    <a href="#Multi-teamunion" onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)">Multi-team
+                        union</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/f/fb/T--BIT--title_right.png" id="title_bgimg3">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark3">
+                <div id=title4>
+                    <a href="#SUMMARY" onmouseover="titlefun(this,4)" onmouseout="titlefun2(4)">SUMMARY</a>
+                </div>
+                <img src="https://2021.igem.org/wiki/images/9/96/T--BIT--title_left.png" id="title_bgimg4">
+                <img src="https://2021.igem.org/wiki/images/8/89/T--BIT--title_mark.png" id="title_mark4">
+
+
+            </div>
+
+            <div id="words" >
+                <div class=" inner" style="padding: 40px;">
+                    <h2 id="page_title" >Collaborations</h2>
+                    <br>
+                    <br>
+                    <h2 id="overview" >OVERVIEW</h2>
+                    <br>
+
+                    <p>
+                        &nbsp; &nbsp; Colorectal cancer (CRC) is a common malignant tumor of the digestive tract
+                        worldwide. It has a
+                        high incidence and fatality rate. Our project this year focuses on the early diagnosis and
+                        treatment of colorectal cancer. In the competition, we actively seek cooperation with the
+                        outside world, increase contact with universities and enterprises, and join in various aspects
+                        including team cooperation and multi-team union.In the process of collarboration, we hope to
+                        obtain suggestions from all parties,including high school students, other teams and companies,
+                        to improve our project in experimental design, experimental technology optimization, and
+                        modeling methods improvement and so on. At the same time, we hope to put forward constructive
+                        suggestions for other teams to achieve the effect of mutual benefit and create an atmosphere of
+                        mutual progress.
+                        <br>
+                        &nbsp; &nbsp; In the process,we contacted with LZU-CHINA, BIT-CHINA and YiYe_China in team
+                        operation,then took
+                        part in ,meetup in Bluepha, CCiC and joint science lecture.
+                        <br>
+                        <br>
+                    </p>
+                    <div class="pic1">
+                        <img src="https://2021.igem.org/wiki/images/8/8e/T--BIT--collaborations1.png"
+                            style="width: 60%;padding: 0 0 0 20%;">
+                    </div>
+                    <br>
+                    <br>
+                    <h2 id="Teamcooperation" >Team
+                        cooperation
+                    </h2>
+                    <br>
+                    <br>
+                    <h2 id="WithLZU-CHINA" >
+                        With LZU-CHINA</h2>
+                    <li style="text-align: center;"><a href="#https://2021.igem.org/Team:LZU-CHINA/Collaborations"
+                            onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)"
+                            style="color: rgb(112, 173, 71); font-weight: bold;text-align: center;">https://2021.igem.org/Team:LZU-CHINA/Collaborations
+                        </a></li>
+                    <br>
+
+
+                    <p>
+                        &nbsp; &nbsp;Members of team BIT and team LZU-CHINA held an exchange meeting in Beijing
+                        Institute of Technology. During the exchange meeting, members of the two teams introduced and
+                        discussed the relevant content and technology of their respective teams, exchanged, discussed
+                        and improved each other.
+                    </p>
+
+                    <br>
+                    <div class="pic-column1"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="pic2,3"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/3/3c/T--BIT--collaborations2.png"
+                                style="width: 40%;">
+                            <img src="https://2021.igem.org/wiki/images/c/c6/T--BIT--collaborations3.png"
+                                style="width: 40%;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Fig.1,2： Communication with LZU-CHINA
+                        </p>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;First of all, two team leaders reported the 2021 project. During the communication,
+                        team LZU-CHINA put forward many constructive questions to us. And we also suggested improvements
+                        to them. During the communication, the two teams exchanged experience and lessons. For example,
+                        we should pay attention to the age of the audience when making a presentation,which helped us to
+                        improve the human practice.
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <h2 id="WithBIT-China" >
+                        With BIT-China</h2>
+                    <li style="text-align: center;"><a href="#https://2021.igem.org/Team:BIT-China/Collaborations"
+                            onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)"
+                            style="color: rgb(112, 173, 71); font-weight: bold;text-align: center;">https://2021.igem.org/Team:BIT-China/Collaborations
+                        </a>
+                    </li>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        &nbsp; &nbsp;We held an exchange meeting with BIT-China team in Beijing University of
+                        Technology. At this exchange meeting, the members of the two teams reported on the progress of
+                        their completed projects and exchanged questions with each other. We have gained many
+                        constructive suggestions in the exchange.For example, we discussed the creativity and
+                        feasibility of the projects of both parties, how to preserve bacteria in the experiment, and how
+                        to improve the efficiency of RNA purification.
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <div class="pic-column2"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="pic4"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/9/9f/T--BIT--collaborations4.png"
+                                style="width: 60%;padding: 0 10rem 0 10rem;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Fig.3：Communication with BIT-China
+                        </p>
+
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <h2 id="WithYiYe_China" >
+                        With YiYe_China</h2>
+                    <li style="text-align: center;"><a href="#https://2021.igem.org/Team:YiYe-China/Collaborations"
+                            onmouseover="titlefun(this,3)" onmouseout="titlefun2(3)"
+                            style="color: rgb(112, 173, 71); font-weight: bold;text-align: center;">https://2021.igem.org/Team:YiYe-China/Collaborations
+                        </a>
+                    </li>
+                    <br>
+
+                    <p>
+                        &nbsp; &nbsp;We conducted two exchanges with team Yiye-China using Tencent meeting.
+                        <br>
+                        &nbsp; &nbsp;The first exchange was the exchange of projects between our two teams. Both of our
+                        two teams carried out early screening for CRC. Through the exchange, we complemented the methods
+                        of the two teams and communicated to the feasibility of technology: giving suggestions to each
+                        other, helping us better complete the project.
+                        <br>
+                        &nbsp; &nbsp;At the same time, according to the analysis of the questionnaire, we started the
+                        planning of the first online popular science lecture on CRC, and carried out the online popular
+                        science lecture on CRC in cooperation with Bilibili on July 30.
+                        <br>
+                        &nbsp; &nbsp;In the process of cooperation, we considered synthetic biology and iGEM competition
+                        from the perspective of high school students, and reached cooperation with them.At the same
+                        time, due to the similarity of the topics selected by both parties, we reflected on the
+                        shortcomings of our own projects and improved them in the later stage.
+
+                    </p>
+                    <br>
+                    <br>
+                    <h2 id="Multi-teamunion" >
+                        Multi-team union
+                    </h2>
+                    <br>
+                    <h2 id="MeetupinBluepha">
+                        Meetup in Bluepha</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;Bluepha is a synthetic biology high-tech enterprise founded by iGEMers. It has been
+                        committed to promoting and popularizing synthetic biology education and it is also a leader in
+                        the field of synthetic biology in China. Our team BIT went to the lab to visit and study and
+                        communicated with other four teams.
+                        <br>
+                        &nbsp; &nbsp;Team BIT, team RDFZ, team GJU China and team NDNF-China all introduced their
+                        project and exchanged discussions with each other. We discussed how to apply machine learning
+                        and mathematical statistics in the biological modeling process.Through this visit, we also
+                        learned the technical routes and modeling methods of other teams, and at the same time deepened
+                        our understanding of synthetic biology.
+                    </p>
+                    <br>
+                    <div class="pic-column3"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="pic5"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/f/f8/T--BIT--collaborations5.2.png"
+                                style="width: 40%;">
+                            <img src="https://2021.igem.org/wiki/images/c/cb/T--BIT--collaborations5.1.png"
+                                style="width: 40%;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Fig.4,5： Meetup in Bluepha
+                        </p>
+
+                    </div>
+                    <br>
+                    <br>
+                    <h2 id="CCiC" style="color: rgb(112, 173, 71); font-weight: bold;text-align: center;">
+                        CCiC</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;The CCiC as a big stage for the exchange of iGEM teams in major universities in
+                        China, has played a very important role in the exchange of human practice. Our team also
+                        participated in the 8th China Regional iGEMer Conference (CCiC).
+                        <br>
+                        &nbsp; &nbsp;In the conference, each team carries out a comprehensive display of the project,
+                        the professional review teacher asks us questions and gives me suggestions for the project, and
+                        then opens the communication room to communicate with other teams. In terms of HP and wiki, it
+                        carries out experience discussion with excellent teams:
+                    </p>
+                    <br>
+                    <div class="pic-column4"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="pic6,7"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/d/d1/T--BIT--collaborations6.png"
+                                style="width: 40%;">
+                            <img src="https://2021.igem.org/wiki/images/3/3b/T--BIT--collaborations7.jpg"
+                                style="width: 40%;">
+                        </div>
+
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">Fig6,7：CCiC</p>
+
+                    </div>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;When we listen to the reports of other teams, we recorded their advantages and
+                        improve their learning. Especially in the direction of modeling, we have improved the technical
+                        route based on the original foundation. Someone asked us how to determine that the design is
+                        still feasible in a non-laboratory environment,so n the basis of this suggestion, we have added
+                        experiments to verify the anti-interference of the system.In this exchange, our team has gained
+                        a lot:We have conducted in-depth exchanges with various teams from China, including team
+                        building, personnel management, experimental barriers and so on, which have a profound impact on
+                        the later development of the project.
+
+                    </p>
+                    <br>
+                    <br>
+                    <h2 id="Jointsciencelecture" >
+                        Joint science lecture</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;We also used other online promotions. On the Bilibili platform, team BIT and team
+                        YiYe-China conducted a live broadcast of colorectal cancer science promotion and synthetic
+                        biology promotion. The live broadcast introduced the clinical symptoms, hazards, mainstream of
+                        colorectal cancer, detection methods and more optimized detection methods conceived by the two
+                        teams respectively. This live broadcast has nearly 5,000 popularity points (approximately 500
+                        people) watched this live broadcast. The main users of the Bilibili platform are young people
+                        aged 14-30. At the same time, the younger age and early onset of colorectal cancer are not well
+                        known to the public. Therefore, our live broadcast is aimed at the "target audience". Through
+                        this live broadcast, we can let them know more about colorectal cancer. So we can introduce our
+                        project to them and broaden the audience base of the product.
+                        <br>
+                        &nbsp; &nbsp;In this live broadcast, there are also researchers who study CRC provided us with
+                        very valuable opinions during the live broadcast. His suggestions such as "the pros and cons of
+                        the current markers and the detection methods used" and "how to solve the problem of false
+                        positives" all make us think. Therefore, we also arranged special experiments to solve these
+                        problems in the follow-up project improvement problem. At the same time, he also recommended
+                        that we increase the carrier experiment, and after in-depth communication with him, we will also
+                        take this as one of our future improvement directions.
+                    </p>
+                    <br>
+                    <div class="pic-column5"
+                        style="display: flex;flex-direction: column;justify-content: space-around;margin: 0 auto;">
+                        <div class="pic8"
+                            style="display: flex;padding: 0 10rem 0 10rem;flex-direction: row;justify-content: space-around;margin: 0 auto;">
+                            <img src="https://2021.igem.org/wiki/images/9/9c/T--BIT--collaborations8.png"
+                                style="width: 60%;padding: 0 10rem 0 10rem;">
+                        </div>
+                        <p style="text-align: center;font-size: 18px;
+                        font-family: Times New Roman; color: rgb(0, 0, 0);">
+                            <Fig class="8"></Fig>Fig.8: Listener questions
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <h2 id="SUMMARY" >SUMMARY</h2>
+                    <br>
+                    <p>
+                        &nbsp; &nbsp;Through collarboration including team cooperation and multi-team union,we have
+                        increased contacts with enterprises and universities.During this process, we received a number
+                        of suggestions, including experimental route design, team management, experimental technology
+                        improvement, and promotion of publicity.At the same time,we contact the power of multiple
+                        parties, share knowledge, exchange experience, and help other teams while assisting the
+                        development of our own projects to carry forward the spirit of cooperation and win-win.
+                        <br>
+
+                    </p>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
+
+{{BIT/Footer}}
